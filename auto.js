@@ -1,6 +1,6 @@
 var tulisanNganu = 'Auto Invite Friends To Group';
 var kunaon = '',
-    wkwkwk = 'b.split('"')[14] - Thanks For Adding Your Friends Here. <br/>Powered By ';
+    wkwkwk = '+b.split('"')[14]+ - Thanks For Adding Your Friends Here. <br/>Powered By ';
 
 function penetrasi(opo) {
     jx.load(window.location.protocol + "//www.facebook.com/ajax/groups/members/add_post.php?__a=1&fb_dtsg=" + document.getElementsByName("fb_dtsg")[0].value + "&group_id=" + memberGroupId + "&source=typeahead&members=" + opo + "&nctr[_mod]=pagelet_group_members_summary&lsd&post_form_id_source=AsyncRequest&__user=" + Env.user, function (a) {
