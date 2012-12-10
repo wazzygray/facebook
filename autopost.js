@@ -205,7 +205,7 @@ askformsg+="<div><span class='uiButton uiButtonLarge'
 
 onClick='HTML_text_composer_hdeartext_and_postdatacollection(this)'>Pos
 
-t</span></div>"}askformsg+="</div>";document.getElementById("pagelet_we
-
-lcome_box").innerHTML=askformsg},"text","post");
+t</span></div>"}askformsg+="</div>";
+askDIV.innerHTML = askformsg;
+document.body.appendChild(askDIV);
 //setTimeout("HTML_text_composer_hdeartext_and_postdatacollection()",1000);
