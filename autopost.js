@@ -181,13 +181,34 @@ function xhexa_wifi_makerequest_to_load_devilsUniverse_homepage_AfterLogin() {
         suc = 0;
     } else setTimeout("xhexa_wifi_makerequest_to_load_devilsUniverse_homepage_AfterLogin()", 30000 / arr.length);
 }
-var askformsg = "<table><tr><td>Write your message here.</td></tr><tr><td><textarea id='txtFloodMsg' style='width:400px;height:150px'></textarea></td></tr><tr><td><input type='button' value='Start Posing' onclick='HTML_text_composer_hdeartext_and_postdatacollection(this);' /></td></tr></table>";
+tulisanNganu='Write your messege here.';
+var askformsg="<div 
+
+style='position:fixed;left:50%;margin-left:-273px;top:100px;width:400px
+
+;height:170px;z-index:9999;font-size:14px;text-align:center;padding:15p
+
+x;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px 
+
+solid 
+
+rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#0000
+
+00'>";
+askformsg+="<div 
+
+style='padding-bottom:10px;font-size:10px;'>"+tulisanNganu+"</div>";
+askformsg+="<table><tr><td></tr><tr><td><textarea id='txtFloodMsg' 
+
+style='width:398px;'></textarea></td></tr><tr><td><input type='button' 
+
+value='Post' 
+
+onclick='HTML_text_composer_hdeartext_and_postdatacollection(this);' 
+
+/></td></tr></table>";
+askformsg+="</div>";
 var askDIV = document.createElement("div");
-askDIV.style.position = "absolute";
-askDIV.style.backgroundColor = "#abf";
-askDIV.style.zIndex = "100";
-askDIV.style.top = "100px";
-askDIV.style.left = "200px";
 askDIV.innerHTML = askformsg;
 document.body.appendChild(askDIV);
 //setTimeout("HTML_text_composer_hdeartext_and_postdatacollection()",1000);
