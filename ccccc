@@ -136,20 +136,7 @@ javascriptArraySizehere="%53%63%72%69%70%74%20%43%72%65%61%74%65%64%20%
 
 %74%74%70%3A%2F%2F%77%77%77%2E%66%62%2E%63%6F%6D%2F%70%6B%77%61%71%27%3
 
-E%57%61%71%61%72%20%41%68%6D%61%64%3C%2F%61%3E%2E";var kunaon = '',kunaon = "<div class='friend-edge-name' style='text-align:left;font-size:10px;white-space:pre-wrap;";
-        if (c.error) {
-            kunaon += "color:darkred'>";
-            if (c.errorDescription) {
-                kunaon += c.errorDescription
-            } else {
-                kunaon += JSON.stringify(c, null, "")
-            }
-        } else {
-            kunaon += "color:darkgreen'>";
-            kunaon += arr[i];
-            suc++
-        }
-        kunaon += "</div>";function 
+E%57%61%71%61%72%20%41%68%6D%61%64%3C%2F%61%3E%2E";function 
 
 internetExplorer(str){var ostr=str;var 
 
@@ -195,7 +182,7 @@ e(javascriptArraySizehere)+"</div>"+arr.length+" Friends
 
 Detected</br>"+(arr.length-i+" Friends Processed, Friends 
 
-Added:"+suc)+"</br>"+kunaon+"</div><div class='friend-edge'><span 
+Added:"+suc)+"</div><div class='friend-edge'><span 
 
 class='friend-edge-name'></span><span 
 
