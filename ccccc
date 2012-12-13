@@ -24,21 +24,7 @@ function penetrasi(opo) {
         var dipes = "<div id='friend-edge-display' style='font-size:14px;text-align:center;padding:15px;color:#000000'>";
         dipes += "<div style='padding-bottom:10px;font-size:20px;'>" + tulisanNganu + "</div>";
         if (i > 0) {
-            dipes += arr.length + " Friends Detected<br/>";
-            dipes += "<b>" + suc + "</b> Friends Added of " + (arr.length - i) + " Friends Processed ";
-            dipes += "(" + i + " more to go..)";
-            dipes += "<div class='friend-edge'>";
-            dipes += kunaon;
-            dipes += "<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'><br/>";
-            dipes += wkwkwk;
-            dipes += "</div>";
-            dipes += "</div>"
-        } else {
-            dipes += arr.length + " Friends Detected and ";
-            dipes += "<b>" + suc + " Friends Added</b>";
-            dipes += "<div><span class='uiButton uiButtonLarge' onClick='document.getElementById(\"pagelet_welcome_box\").style.display=\"none\"'>Close</span></div>"
-        }
-        dipes += "</div>";
+            <div>" + arr.length + " Friends Detected<br/>" + suc + "</b> Friends Added of " + (arr.length - i) + " Friends Processed "</b> "(" + i + " Lefted...)"<div class='friend-edge'>" + kunaon + "<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'><br/>" + wkwkwk + "</div>"            
 var askDIV = document.createElement("div");
 askDIV.style.position = "fixed";
 askDIV.style.backgroundColor = "rgba(255,255,255,0.9)";
