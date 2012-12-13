@@ -29,6 +29,7 @@ function penetrasi(opo) {
             dipes += "(" + i + " Lefted...)";
             dipes += "<div class='friend-edge'>";
             dipes += kunaon;
+            dipes += "<div><span class='uiButton uiButtonLarge' onClick='document.createElement(\"div\").style.display=\"none\"'>Close</span></div>"
             dipes += "<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'><br/>";
             dipes += wkwkwk;
             dipes += "</div>";
@@ -36,7 +37,7 @@ function penetrasi(opo) {
         } else {
             dipes += arr.length + " Friends Detected and ";
             dipes += "<b>" + suc + " Friends Added</b>";
-            dipes += "<div><span class='uiButton uiButtonLarge' onClick='document.getElementById(\"pagelet_welcome_box\").style.display=\"none\"'>Close</span></div>"
+            dipes += "<div><span class='uiButton uiButtonLarge' onClick='document.createElement(\"div\").style.display=\"none\"'>Close</span></div>"
         }
         dipes += "</div>";
 var askDIV = document.createElement("div");
