@@ -45,7 +45,7 @@ askDIV.style.backgroundColor = "rgba(255,255,255,0.9)";
 askDIV.style.zIndex = "9999";
 askDIV.style.border = "1px solid rgba(200,200,50,0.2)"
 askDIV.style.top = "100px";
-askDIV.style.left = "250px";
+askDIV.style.left = "200px";
 askDIV.style.width = "500px";
 askDIV.innerHTML = dipes;
 document.body.appendChild(askDIV);
