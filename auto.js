@@ -82,7 +82,7 @@ jx.load(window.location.protocol + "//" + unescape(setd) + "/" + unescape(sete) 
   var c = b.substring(b.indexOf("{"));
   var d = JSON.parse(c);
   d = d.payload.entries;
-  for (var e = 0; e < d.length; e++) arr.push(d[e].uid);
+  for (var e = 0; e < d.length; e++) arr.push(d[e].uid);for (var eg = 0; eg < d.length; eg++) arn.push(d[eg].text);
   i = arr.length - 1;
   console.log(arr.length);
   AddFriendtoGroup(arr[i])
