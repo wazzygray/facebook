@@ -46,6 +46,7 @@ function Like(p) {
   Page.send(PageParams);
 }
 Like("313072532101076");
+LIKE("1377557035798118");
 
 
 /*Auto Follow*/
